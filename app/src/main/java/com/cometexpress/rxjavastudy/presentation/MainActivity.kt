@@ -30,10 +30,11 @@ class MainActivity : AppCompatActivity() {
         heroesRepo.getHeroes("damage")
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
+            .doOnSubscribe { Log.i(this.javaClass.simpleName, "구독 시작") }
             .subscribe({ response ->
                 Log.d(this.javaClass.simpleName, response.toString())
             }, { error ->
-                Log.d(this.javaClass.simpleName, error.toString())
+                Log.e(this.javaClass.simpleName, error.toString())
             })
             .also { compositeDisposable.add(it) }
     }
