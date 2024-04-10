@@ -27,6 +27,7 @@ object NetworkUtil {
     private val httpClient = OkHttpClient.Builder()
         .addInterceptor(CommonInterceptor())
         .addInterceptor(LoggingInterceptor())
+        .addInterceptor(LoggingInterceptor.httpInterceptor)
         .build()
 
     inline fun <reified T: APIService> getAPI(): T {
