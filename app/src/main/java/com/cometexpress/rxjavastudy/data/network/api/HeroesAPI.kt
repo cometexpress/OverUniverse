@@ -15,8 +15,3 @@ interface HeroesAPI: APIService {
     ): Single<Response<List<Hero>>>
 
 }
-
-data class ErrorHeroesAPI(
-    val code: Int,
-    val message: String
-)

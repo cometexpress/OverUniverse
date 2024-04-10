@@ -2,7 +2,9 @@ package com.cometexpress.rxjavastudy.presentation
 
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.cometexpress.rxjavastudy.common.api.APIResult
 import com.cometexpress.rxjavastudy.data.network.NetworkUtil
 import com.cometexpress.rxjavastudy.data.network.api.HeroesAPI
 import com.cometexpress.rxjavastudy.data.repository_impl.HeroesRepositoryImpl
@@ -27,12 +29,23 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        heroesRepo.getHeroes("damage")
+        val test = "damag"
+
+        heroesRepo.getHeroes(test)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .doOnSubscribe { Log.i(this.javaClass.simpleName, "구독 시작") }
             .subscribe({ response ->
-                Log.d(this.javaClass.simpleName, response.toString())
+                when(response) {
+                    is APIResult.Success -> {
+                        Log.d(this.javaClass.simpleName, response.toString())
+                    }
+                    is APIResult.Error -> {
+                        Toast.makeText(this@MainActivity, response.error.msg, Toast.LENGTH_SHORT).show()
+                        Log.e(this.javaClass.simpleName, response.toString())
+                    }
+                }
+
             }, { error ->
                 Log.e(this.javaClass.simpleName, error.toString())
             })

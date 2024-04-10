@@ -1,28 +1,42 @@
 package com.cometexpress.rxjavastudy.data.repository_impl
 
+import com.cometexpress.rxjavastudy.common.api.APIResult
 import com.cometexpress.rxjavastudy.data.model.Hero
 import com.cometexpress.rxjavastudy.data.network.api.HeroesAPI
+import com.cometexpress.rxjavastudy.common.api.APIError
+import com.cometexpress.rxjavastudy.data.model.ErrorModel
 import com.cometexpress.rxjavastudy.domain.repository.HeroesRepository
 import io.reactivex.Single
 
-class HeroesRepositoryImpl(private val apiService: HeroesAPI) : HeroesRepository {
+class HeroesRepositoryImpl(private val apiService: HeroesAPI): HeroesRepository {
 
-    override fun getHeroes(role: String): Single<List<Hero>> {
+    override fun getHeroes(role: String): Single<APIResult<List<Hero>, ErrorModel>> {
         return apiService.getHeroes(role)
             .map { response ->
-                if (response.isSuccessful) {
+                if (response.isSuccessful && response.code() == 200) {
                     val data = response.body()
                     if (data != null) {
-                        return@map data
+                        APIResult.Success(data)
                     } else {
-                        throw Exception("응답 데이터: null")
+                        APIResult.Error(
+                            ErrorModel(code = APIError.InvalidData.code, msg = APIError.InvalidData.message)
+                        )
                     }
                 } else {
-                    throw Exception("통신 오류: ${response.code()}")
+
+                    val code = response.code()
+
+                    // enum 값을 통해 message 찾도록 추가
+                    val message = APIError.HeroesAPI.entries.firstOrNull { it.code == code }?.message ?: ""
+                    APIResult.Error(
+                        ErrorModel(code = code, msg = message)
+                    )
                 }
             }
-            .onErrorResumeNext { error: Throwable ->
-                Single.error(Exception("${error.message}"))
+            .onErrorReturn { error: Throwable ->
+                APIResult.Error(
+                    ErrorModel(code = APIError.ServerError.code, msg = error.message.toString())
+                )
             }
     }
 }
