@@ -5,6 +5,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.cometexpress.rxjavastudy.common.api.APIResult
+import com.cometexpress.rxjavastudy.common.extension.showToast
 import com.cometexpress.rxjavastudy.data.network.NetworkUtil
 import com.cometexpress.rxjavastudy.data.network.api.HeroesAPI
 import com.cometexpress.rxjavastudy.data.repository_impl.HeroesRepositoryImpl
@@ -41,7 +42,7 @@ class MainActivity : AppCompatActivity() {
                         Log.d(this.javaClass.simpleName, response.toString())
                     }
                     is APIResult.Error -> {
-                        Toast.makeText(this@MainActivity, response.error.msg, Toast.LENGTH_SHORT).show()
+                        showToast(response.error.msg)
                         Log.e(this.javaClass.simpleName, response.toString())
                     }
                 }
