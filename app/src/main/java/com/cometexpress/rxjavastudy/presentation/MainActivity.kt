@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //test
         lifecycleScope.launch {
             val call = service.getHeroes("damage")
             if (call.isSuccessful) {
