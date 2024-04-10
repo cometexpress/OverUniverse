@@ -50,12 +50,18 @@ dependencies {
     // rxjava
     implementation(libs.rxjava2)
 
+    // rxAndroid
+    implementation(libs.rxAndroid)
+
     // retrofit
     implementation(libs.retrofit)
+//    implementation(libs.retrofit.converter.gson)
     implementation(libs.retrofit.converter.moshi)
+    implementation(libs.retrofit.rxjava2.adapter)
 
     // moshi
     implementation(libs.moshi)
+    implementation(libs.moshi.kotlin)
     implementation(libs.moshi.codegen)
 
     //okhttp
