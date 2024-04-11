@@ -4,46 +4,53 @@ import android.os.Bundle
 import android.util.Log
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import com.cometexpress.rxjavastudy.R
+import com.cometexpress.rxjavastudy.common.base.BaseActivity
 import com.cometexpress.rxjavastudy.common.extension.showToast
 import com.cometexpress.rxjavastudy.databinding.ActivityMainBinding
+import com.cometexpress.rxjavastudy.presentation.heroes.HeroesFragment
+import com.cometexpress.rxjavastudy.presentation.maps.MapsFragment
+import com.cometexpress.rxjavastudy.presentation.modes.ModesFragment
 import dagger.hilt.android.AndroidEntryPoint
 import io.reactivex.disposables.CompositeDisposable
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityMainBinding
-
-    private val vm: MainVM by viewModels()
-
-    private val compositeDisposable = CompositeDisposable()
+class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::inflate) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
-        bind()
-        val test = "tank"
-        vm.getHeroes(test)
+        setBottomNavigationView()
+
+        // 앱 초기 실행시 화면 설정
+        if (savedInstanceState == null) {
+            binding.bottomNavigationView.selectedItemId = R.id.fragment_heroes
+        }
     }
 
-    private fun bind() {
-        vm.heroes.subscribe { heroes ->
-            binding.tvResult.text = heroes.toString()
-        }.also { compositeDisposable.add(it) }
+    private fun setBottomNavigationView() {
+        binding.bottomNavigationView.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.fragment_heroes -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.main_container, HeroesFragment.newInstance()).commit()
+                    true
+                }
 
-        vm.isLoading.subscribe { isLoading ->
-            Log.i("info", "로딩상태 = $isLoading")
-        }.also { compositeDisposable.add(it) }
+                R.id.fragment_maps -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.main_container, MapsFragment.newInstance()).commit()
+                    true
+                }
 
-        vm.toastMessage.subscribe { message ->
-            showToast(message)
-        }.also { compositeDisposable.add(it) }
-    }
+                R.id.fragment_modes -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.main_container, ModesFragment.newInstance()).commit()
+                    true
+                }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        compositeDisposable.dispose()
+                else -> false
+            }
+        }
     }
 }

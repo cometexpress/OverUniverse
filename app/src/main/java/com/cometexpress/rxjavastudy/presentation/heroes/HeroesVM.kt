@@ -1,4 +1,4 @@
-package com.cometexpress.rxjavastudy.presentation
+package com.cometexpress.rxjavastudy.presentation.heroes
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
@@ -14,7 +14,7 @@ import io.reactivex.subjects.PublishSubject
 import javax.inject.Inject
 
 @HiltViewModel
-class MainVM @Inject constructor(
+class HeroesVM @Inject constructor(
     private val heroesRepository: HeroesRepository
 ) : ViewModel() {
 
