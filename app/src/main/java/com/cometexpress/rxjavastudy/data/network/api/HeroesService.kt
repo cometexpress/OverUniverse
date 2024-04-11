@@ -7,7 +7,7 @@ import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-interface HeroesAPI: APIService {
+interface HeroesService {
 
     @GET("heroes")
     fun getHeroes(

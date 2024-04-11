@@ -10,6 +10,9 @@ import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
 
+/**
+ * DI 적용 전 사용 했던 Util
+ */
 object NetworkUtil {
 
     val client: Retrofit by lazy {
