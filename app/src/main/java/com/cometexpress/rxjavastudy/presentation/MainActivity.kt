@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.util.Log
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import com.cometexpress.rxjavastudy.R
 import com.cometexpress.rxjavastudy.common.base.BaseActivity
 import com.cometexpress.rxjavastudy.common.extension.showToast
@@ -28,24 +30,28 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
         }
     }
 
+    private fun replaceBottomView(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+            .replace(R.id.main_container, fragment)
+            .commitAllowingStateLoss()
+    }
+
     private fun setBottomNavigationView() {
         binding.bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.fragment_heroes -> {
-                    supportFragmentManager.beginTransaction()
-                        .replace(R.id.main_container, HeroesFragment.newInstance()).commit()
+                    replaceBottomView(HeroesFragment.newInstance())
                     true
                 }
 
                 R.id.fragment_maps -> {
-                    supportFragmentManager.beginTransaction()
-                        .replace(R.id.main_container, MapsFragment.newInstance()).commit()
+                    replaceBottomView(MapsFragment.newInstance())
                     true
                 }
 
                 R.id.fragment_modes -> {
-                    supportFragmentManager.beginTransaction()
-                        .replace(R.id.main_container, ModesFragment.newInstance()).commit()
+                    replaceBottomView(ModesFragment.newInstance())
                     true
                 }
 

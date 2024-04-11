@@ -24,6 +24,7 @@
         app:itemIconTint="#2196F3"
         app:itemTextColor="@color/black"
         app:labelVisibilityMode="unlabeled"
+        android:background="@drawable/bottom_nav_round"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
