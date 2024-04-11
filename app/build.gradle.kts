@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.hilt.plugin)
 }
 
 android {
@@ -45,7 +47,16 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
+    implementation(libs.androidx.fragment)
     implementation(libs.androidx.constraintlayout)
+
+    // viewModel
+    implementation(libs.viewmodel)
+    implementation(libs.viewmodel.savedstate)
+
+    // hilt
+    implementation(libs.hilt)
+    kapt(libs.hilt.compiler)
 
     // rxjava
     implementation(libs.rxjava2)
@@ -62,7 +73,7 @@ dependencies {
     // moshi
     implementation(libs.moshi)
     implementation(libs.moshi.kotlin)
-    implementation(libs.moshi.codegen)
+//    implementation(libs.moshi.codegen)  - hilt 적용시 충돌
 
     //okhttp
     implementation(libs.okhttp)

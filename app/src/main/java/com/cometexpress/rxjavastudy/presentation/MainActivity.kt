@@ -3,6 +3,7 @@ package com.cometexpress.rxjavastudy.presentation
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.cometexpress.rxjavastudy.common.api.APIResult
 import com.cometexpress.rxjavastudy.common.extension.showToast
@@ -14,10 +15,15 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+
+    private val vm: MainVM by viewModels()
+
+//    private val vm: MainVM by viewModels { // scope is this fragment
+//        YourViewModelFactory(YourRepository(YourItemDatabase.invoke(requireContext())))
+//    }
 
     private val heroesRepo by lazy {
         HeroesRepositoryImpl(apiService = NetworkUtil.getAPI<HeroesAPI>())
@@ -30,7 +36,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val test = "damag"
+        // TODO: RecyclerView UI 연결 및 MVP 패턴 적용
+        val test = "tank"
 
         heroesRepo.getHeroes(test)
             .subscribeOn(Schedulers.io())
@@ -39,6 +46,7 @@ class MainActivity : AppCompatActivity() {
             .subscribe({ response ->
                 when(response) {
                     is APIResult.Success -> {
+                        binding.tvResult.text = response.data.toString()
                         Log.d(this.javaClass.simpleName, response.toString())
                     }
                     is APIResult.Error -> {
