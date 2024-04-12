@@ -4,6 +4,7 @@ import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.cometexpress.rxjavastudy.common.api.APIResult
 import com.cometexpress.rxjavastudy.data.model.Hero
+import com.cometexpress.rxjavastudy.data.model.HeroType
 import com.cometexpress.rxjavastudy.domain.repository.HeroesRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -20,7 +21,10 @@ class HeroesVM @Inject constructor(
 
     private val compositeDisposable = CompositeDisposable()
 
-    var heroes: BehaviorSubject<MutableList<Hero>> = BehaviorSubject.create()
+    var allHeroes: BehaviorSubject<MutableList<Hero>> = BehaviorSubject.create()
+    var damageHeroes: BehaviorSubject<MutableList<Hero>> = BehaviorSubject.create()
+    var supportHeroes: BehaviorSubject<MutableList<Hero>> = BehaviorSubject.create()
+    var tankHeroes: BehaviorSubject<MutableList<Hero>> = BehaviorSubject.create()
 
     var toastMessage: PublishSubject<String> = PublishSubject.create()
 
@@ -35,7 +39,15 @@ class HeroesVM @Inject constructor(
             .subscribe({ response ->
                 when (response) {
                     is APIResult.Success -> {
-                        heroes.onNext(response.data.toMutableList())
+                        val type = HeroType.from(role)
+                        type?.let {
+                            when (it) {
+                                HeroType.TANK -> tankHeroes.onNext(response.data.toMutableList())
+                                HeroType.DAMAGE -> damageHeroes.onNext(response.data.toMutableList())
+                                HeroType.SUPPORT -> supportHeroes.onNext(response.data.toMutableList())
+                            }
+                            allHeroes.onNext(response.data.toMutableList())
+                        }
                     }
                     is APIResult.Error -> {
                         toastMessage.onNext(response.error.msg)
@@ -47,4 +59,10 @@ class HeroesVM @Inject constructor(
             .also { compositeDisposable.add(it) }
     }
 
+    override fun onCleared() {
+        if (!compositeDisposable.isDisposed) {
+            compositeDisposable.clear()
+        }
+        super.onCleared()
+    }
 }

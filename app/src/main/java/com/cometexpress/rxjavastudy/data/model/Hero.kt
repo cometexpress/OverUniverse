@@ -15,3 +15,11 @@ data class Hero(
     @Json(name = "role")
     var role: String?
 )
+
+enum class HeroType(val role: String) {
+    TANK("tank"), DAMAGE("damage"), SUPPORT("support");
+
+    companion object {
+        fun from(role: String): HeroType? = HeroType.entries.find { it.role == role }
+    }
+}

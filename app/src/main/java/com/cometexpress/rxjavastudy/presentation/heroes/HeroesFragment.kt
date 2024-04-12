@@ -6,6 +6,7 @@ import android.view.View
 import androidx.fragment.app.activityViewModels
 import com.cometexpress.rxjavastudy.common.base.BaseFragment
 import com.cometexpress.rxjavastudy.common.extension.showToast
+import com.cometexpress.rxjavastudy.data.model.HeroType
 import com.cometexpress.rxjavastudy.databinding.FragmentHeroesBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -22,12 +23,14 @@ class HeroesFragment : BaseFragment<FragmentHeroesBinding>(FragmentHeroesBinding
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         bind()
-        val test = "tank"
-        vm.getHeroes(test)
+        vm.getHeroes(HeroType.TANK.name.lowercase())
+        vm.getHeroes(HeroType.DAMAGE.name.lowercase())
+        vm.getHeroes(HeroType.SUPPORT.name.lowercase())
     }
 
     private fun bind() {
-        vm.heroes.subscribe { heroes ->
+        // TODO: RecyclerView 연결
+        vm.allHeroes.subscribe { heroes ->
             binding.tvResult.text = heroes.toString()
         }.also { compositeDisposable.add(it) }
 
