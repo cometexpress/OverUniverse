@@ -1,4 +1,4 @@
-package com.cometexpress.rxjavastudy.data.dto
+package com.cometexpress.rxjavastudy.data.dto.heroes
 
 
 import com.squareup.moshi.Json

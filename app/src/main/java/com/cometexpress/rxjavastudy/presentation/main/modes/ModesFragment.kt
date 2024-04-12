@@ -1,11 +1,7 @@
-package com.cometexpress.rxjavastudy.presentation.modes
+package com.cometexpress.rxjavastudy.presentation.main.modes
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import com.cometexpress.rxjavastudy.R
 import com.cometexpress.rxjavastudy.common.base.BaseFragment
 import com.cometexpress.rxjavastudy.databinding.FragmentModesBinding
 import dagger.hilt.android.AndroidEntryPoint

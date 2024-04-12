@@ -6,11 +6,3 @@ data class HeroEntity(
     var image: String,
     var role: String
 )
-
-enum class HeroType(val role: String) {
-    TANK("tank"), DAMAGE("damage"), SUPPORT("support");
-
-    companion object {
-        fun from(role: String): HeroType? = HeroType.entries.find { it.role == role }
-    }
-}

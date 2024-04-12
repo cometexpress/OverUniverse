@@ -1,4 +1,4 @@
-package com.cometexpress.rxjavastudy.presentation.heroes
+package com.cometexpress.rxjavastudy.presentation.main.heroes
 
 import android.util.Log
 import androidx.lifecycle.ViewModel

@@ -1,4 +1,4 @@
-package com.cometexpress.rxjavastudy.presentation.heroes
+package com.cometexpress.rxjavastudy.presentation.main.heroes
 
 import android.os.Bundle
 import android.util.Log
@@ -7,7 +7,6 @@ import androidx.fragment.app.activityViewModels
 import com.cometexpress.rxjavastudy.common.base.BaseFragment
 import com.cometexpress.rxjavastudy.common.extension.showToast
 import com.cometexpress.rxjavastudy.databinding.FragmentHeroesBinding
-import com.cometexpress.rxjavastudy.domain.entity.heroes.HeroType
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

@@ -1,4 +1,4 @@
-package com.cometexpress.rxjavastudy.presentation.maps
+package com.cometexpress.rxjavastudy.presentation.main.maps
 
 import android.os.Bundle
 import android.view.View

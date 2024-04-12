@@ -6,6 +6,7 @@ import com.cometexpress.rxjavastudy.common.api.APIError
 import com.cometexpress.rxjavastudy.data.mapper.asEntity
 import com.cometexpress.rxjavastudy.data.ErrorModel
 import com.cometexpress.rxjavastudy.domain.entity.heroes.HeroEntity
+import com.cometexpress.rxjavastudy.domain.entity.heroes.RoleEntity
 import com.cometexpress.rxjavastudy.domain.repository.HeroesRepository
 import io.reactivex.Single
 import javax.inject.Inject
@@ -41,4 +42,34 @@ class HeroesRepositoryImpl @Inject constructor(
                 )
             }
     }
+
+    override fun getRoles(): Single<APIResult<List<RoleEntity>, ErrorModel>> {
+        return apiService.getRoles()
+            .map { response ->
+                if (response.isSuccessful && response.code() == 200) {
+                    val data = response.body()
+                    if (data != null) {
+                        APIResult.Success(data.asEntity())
+                    } else {
+                        APIResult.Error(
+                            ErrorModel(code = APIError.InvalidData.code, msg = APIError.InvalidData.message)
+                        )
+                    }
+                } else {
+                    val code = response.code()
+                    // enum 값을 통해 message 찾도록 추가
+                    val message = APIError.HeroesAPI.from(code)?.message ?: ""
+                    APIResult.Error(
+                        ErrorModel(code = code, msg = message)
+                    )
+                }
+            }
+            .onErrorReturn { error: Throwable ->
+                APIResult.Error(
+                    ErrorModel(code = APIError.ServerError.code, msg = error.message.toString())
+                )
+            }
+    }
+
+
 }

@@ -2,7 +2,7 @@ package com.cometexpress.rxjavastudy.data.mapper
 
 import com.cometexpress.rxjavastudy.common.Constant
 import com.cometexpress.rxjavastudy.data.EntityMapper
-import com.cometexpress.rxjavastudy.data.dto.HeroDTO
+import com.cometexpress.rxjavastudy.data.dto.heroes.HeroDTO
 import com.cometexpress.rxjavastudy.domain.entity.heroes.HeroEntity
 
 object HeroListEntityMapper : EntityMapper<List<HeroDTO>, List<HeroEntity>> {

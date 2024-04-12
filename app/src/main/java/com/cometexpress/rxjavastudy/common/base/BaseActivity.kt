@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding
+import io.reactivex.disposables.CompositeDisposable
 
 abstract class BaseActivity<B: ViewBinding>(
     val bindingFactory: (LayoutInflater) -> B
@@ -11,6 +12,8 @@ abstract class BaseActivity<B: ViewBinding>(
 
     private var _binding: B? = null
     val binding get() = _binding!!
+
+    internal val compositeDisposable = CompositeDisposable()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

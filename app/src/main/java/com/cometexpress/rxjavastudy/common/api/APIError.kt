@@ -1,5 +1,7 @@
 package com.cometexpress.rxjavastudy.common.api
 
+import com.cometexpress.rxjavastudy.domain.entity.heroes.HeroType
+
 sealed class APIError{
     data object InvalidData : APIError() { // data == null
         override val message = "알 수 없는 데이터"
@@ -33,6 +35,10 @@ sealed class APIError{
         InternalServerError(500, "인터넷 서버 오류 입니다"),
         BlizzardServerError(504, "블리자드 서버 오류 입니다")
         ;
+
+        companion object {
+            fun from(code: Int): HeroesAPI? = HeroesAPI.entries.find { it.code == code }
+        }
     }
 }
 

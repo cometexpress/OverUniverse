@@ -1,20 +1,15 @@
-package com.cometexpress.rxjavastudy.presentation
+package com.cometexpress.rxjavastudy.presentation.main
 
 import android.os.Bundle
-import android.util.Log
-import androidx.activity.viewModels
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.cometexpress.rxjavastudy.R
 import com.cometexpress.rxjavastudy.common.base.BaseActivity
-import com.cometexpress.rxjavastudy.common.extension.showToast
 import com.cometexpress.rxjavastudy.databinding.ActivityMainBinding
-import com.cometexpress.rxjavastudy.presentation.heroes.HeroesFragment
-import com.cometexpress.rxjavastudy.presentation.maps.MapsFragment
-import com.cometexpress.rxjavastudy.presentation.modes.ModesFragment
+import com.cometexpress.rxjavastudy.presentation.main.heroes.HeroesFragment
+import com.cometexpress.rxjavastudy.presentation.main.maps.MapsFragment
+import com.cometexpress.rxjavastudy.presentation.main.modes.ModesFragment
 import dagger.hilt.android.AndroidEntryPoint
-import io.reactivex.disposables.CompositeDisposable
 
 @AndroidEntryPoint
 class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::inflate) {
