@@ -3,8 +3,8 @@ package com.cometexpress.rxjavastudy.presentation.heroes
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.cometexpress.rxjavastudy.common.api.APIResult
-import com.cometexpress.rxjavastudy.data.model.Hero
-import com.cometexpress.rxjavastudy.data.model.HeroType
+import com.cometexpress.rxjavastudy.domain.entity.heroes.HeroEntity
+import com.cometexpress.rxjavastudy.domain.entity.heroes.HeroType
 import com.cometexpress.rxjavastudy.domain.repository.HeroesRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -21,10 +21,10 @@ class HeroesVM @Inject constructor(
 
     private val compositeDisposable = CompositeDisposable()
 
-    var allHeroes: BehaviorSubject<MutableList<Hero>> = BehaviorSubject.create()
-    var damageHeroes: BehaviorSubject<MutableList<Hero>> = BehaviorSubject.create()
-    var supportHeroes: BehaviorSubject<MutableList<Hero>> = BehaviorSubject.create()
-    var tankHeroes: BehaviorSubject<MutableList<Hero>> = BehaviorSubject.create()
+    var allHeroes: BehaviorSubject<MutableList<HeroEntity>> = BehaviorSubject.create()
+    var damageHeroes: BehaviorSubject<MutableList<HeroEntity>> = BehaviorSubject.create()
+    var supportHeroes: BehaviorSubject<MutableList<HeroEntity>> = BehaviorSubject.create()
+    var tankHeroes: BehaviorSubject<MutableList<HeroEntity>> = BehaviorSubject.create()
 
     var toastMessage: PublishSubject<String> = PublishSubject.create()
 

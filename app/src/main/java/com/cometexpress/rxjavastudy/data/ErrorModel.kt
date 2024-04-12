@@ -1,4 +1,4 @@
-package com.cometexpress.rxjavastudy.data.model
+package com.cometexpress.rxjavastudy.data
 
 data class ErrorModel(
     val code: Int,

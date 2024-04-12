@@ -6,8 +6,8 @@ import android.view.View
 import androidx.fragment.app.activityViewModels
 import com.cometexpress.rxjavastudy.common.base.BaseFragment
 import com.cometexpress.rxjavastudy.common.extension.showToast
-import com.cometexpress.rxjavastudy.data.model.HeroType
 import com.cometexpress.rxjavastudy.databinding.FragmentHeroesBinding
+import com.cometexpress.rxjavastudy.domain.entity.heroes.HeroType
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

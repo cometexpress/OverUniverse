@@ -1,7 +1,6 @@
 package com.cometexpress.rxjavastudy.data.network.api
 
-import com.cometexpress.rxjavastudy.data.model.Hero
-import com.cometexpress.rxjavastudy.data.network.APIService
+import com.cometexpress.rxjavastudy.data.dto.HeroDTO
 import io.reactivex.Single
 import retrofit2.Response
 import retrofit2.http.GET
@@ -12,6 +11,6 @@ interface HeroesService {
     @GET("heroes")
     fun getHeroes(
         @Query("role") role: String
-    ): Single<Response<List<Hero>>>
+    ): Single<Response<List<HeroDTO>>>
 
 }

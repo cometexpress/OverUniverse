@@ -1,6 +1,6 @@
 package com.cometexpress.rxjavastudy.common.api
 
-import com.cometexpress.rxjavastudy.data.model.ErrorModel
+import com.cometexpress.rxjavastudy.data.ErrorModel
 
 sealed class APIResult <out T : Any, out U : ErrorModel> {
     data class Success <T: Any>(val data : T) : APIResult<T, Nothing>()

@@ -1,11 +1,11 @@
-package com.cometexpress.rxjavastudy.data.model
+package com.cometexpress.rxjavastudy.data.dto
 
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
-data class Hero(
+data class HeroDTO(
     @Json(name = "key")
     var key: String?,
     @Json(name = "name")
@@ -15,11 +15,3 @@ data class Hero(
     @Json(name = "role")
     var role: String?
 )
-
-enum class HeroType(val role: String) {
-    TANK("tank"), DAMAGE("damage"), SUPPORT("support");
-
-    companion object {
-        fun from(role: String): HeroType? = HeroType.entries.find { it.role == role }
-    }
-}
