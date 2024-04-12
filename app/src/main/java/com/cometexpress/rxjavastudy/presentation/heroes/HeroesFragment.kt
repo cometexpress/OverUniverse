@@ -23,9 +23,6 @@ class HeroesFragment : BaseFragment<FragmentHeroesBinding>(FragmentHeroesBinding
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         bind()
-        vm.getHeroes(HeroType.TANK.name.lowercase())
-        vm.getHeroes(HeroType.DAMAGE.name.lowercase())
-        vm.getHeroes(HeroType.SUPPORT.name.lowercase())
     }
 
     private fun bind() {
