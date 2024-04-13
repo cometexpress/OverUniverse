@@ -1,7 +1,7 @@
-package com.cometexpress.rxjavastudy.data.network.api
+package com.cometexpress.rxjavastudy.data.remote.network.api
 
-import com.cometexpress.rxjavastudy.data.dto.heroes.HeroDTO
-import com.cometexpress.rxjavastudy.data.dto.heroes.RoleDTO
+import com.cometexpress.rxjavastudy.data.remote.dto.heroes.HeroDTO
+import com.cometexpress.rxjavastudy.data.remote.dto.heroes.RoleDTO
 import io.reactivex.Single
 import retrofit2.Response
 import retrofit2.http.GET

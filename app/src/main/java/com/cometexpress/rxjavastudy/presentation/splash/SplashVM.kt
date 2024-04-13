@@ -39,7 +39,7 @@ class SplashVM @Inject constructor(
             .subscribe({ response ->
                 when (response) {
                     is APIResult.Success -> {
-                        // 로컬 DB에 저장시키기
+                        // TODO: 로컬 DB에 저장 시킨 후 메인으로 이동
                         roles.onNext(response.data.toMutableList())
                     }
 

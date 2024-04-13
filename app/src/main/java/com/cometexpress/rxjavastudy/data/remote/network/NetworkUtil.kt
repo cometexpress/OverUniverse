@@ -1,8 +1,8 @@
-package com.cometexpress.rxjavastudy.data.network
+package com.cometexpress.rxjavastudy.data.remote.network
 
 import com.cometexpress.rxjavastudy.common.Constant
-import com.cometexpress.rxjavastudy.data.network.interceptor.CommonInterceptor
-import com.cometexpress.rxjavastudy.data.network.interceptor.LoggingInterceptor
+import com.cometexpress.rxjavastudy.data.remote.network.interceptor.CommonInterceptor
+import com.cometexpress.rxjavastudy.data.remote.network.interceptor.LoggingInterceptor
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import okhttp3.OkHttpClient

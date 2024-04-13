@@ -1,4 +1,4 @@
-package com.cometexpress.rxjavastudy.data.network.interceptor
+package com.cometexpress.rxjavastudy.data.remote.network.interceptor
 
 import okhttp3.Interceptor
 import okhttp3.Response

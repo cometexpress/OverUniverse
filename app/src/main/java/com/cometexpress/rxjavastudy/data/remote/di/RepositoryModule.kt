@@ -1,4 +1,4 @@
-package com.cometexpress.rxjavastudy.data.di
+package com.cometexpress.rxjavastudy.data.remote.di
 
 import com.cometexpress.rxjavastudy.data.repository_impl.HeroesRepositoryImpl
 import com.cometexpress.rxjavastudy.domain.repository.HeroesRepository

@@ -1,10 +1,10 @@
-package com.cometexpress.rxjavastudy.data.di
+package com.cometexpress.rxjavastudy.data.remote.di
 
 import com.cometexpress.rxjavastudy.common.Constant
-import com.cometexpress.rxjavastudy.data.network.NetworkUtil
-import com.cometexpress.rxjavastudy.data.network.api.HeroesService
-import com.cometexpress.rxjavastudy.data.network.interceptor.CommonInterceptor
-import com.cometexpress.rxjavastudy.data.network.interceptor.LoggingInterceptor
+import com.cometexpress.rxjavastudy.data.remote.network.NetworkUtil
+import com.cometexpress.rxjavastudy.data.remote.network.api.HeroesService
+import com.cometexpress.rxjavastudy.data.remote.network.interceptor.CommonInterceptor
+import com.cometexpress.rxjavastudy.data.remote.network.interceptor.LoggingInterceptor
 import com.cometexpress.rxjavastudy.data.repository_impl.HeroesRepositoryImpl
 import com.cometexpress.rxjavastudy.domain.repository.HeroesRepository
 import com.squareup.moshi.Moshi

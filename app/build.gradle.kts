@@ -85,6 +85,12 @@ dependencies {
     // glide
     implementation(libs.glide)
 
+    // room
+    implementation(libs.room)
+    implementation(libs.room.rxjava2)
+    kapt(libs.room.compliler)
+
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

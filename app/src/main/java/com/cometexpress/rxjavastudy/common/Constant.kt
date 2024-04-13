@@ -6,6 +6,10 @@ object Constant {
         const val BASE_URL = "https://overfast-api.tekrop.fr/"
 
         const val DATA_ERROR = "error"
+
+        object Code {
+            const val SUCCESS = 200
+        }
     }
 
 }

@@ -20,7 +20,7 @@ rxAndroid = "2.1.1"
 glide = "4.16.0"
 okhttp = "4.12.0"
 gson = "2.10.1"
-
+roomDB = "2.6.1"
 
 
 
@@ -40,6 +40,10 @@ viewmodel-savedstate = { group = "androidx.lifecycle", name = "lifecycle-viewmod
 
 hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+
+room = { group = "androidx.room", name = "room-runtime", version.ref = "roomDB" }
+room-compliler = { group = "androidx.room", name = "room-compiler", version.ref = "roomDB" }
+room-rxjava2 = { group = "androidx.room", name = "room-rxjava2", version.ref = "roomDB" }
 
 rxjava2 = { module = "io.reactivex.rxjava2:rxjava", version.ref = "rxJava2" }
 rxAndroid = { module = "io.reactivex.rxjava2:rxandroid", version.ref = "rxAndroid" }

@@ -1,8 +1,8 @@
-package com.cometexpress.rxjavastudy.data.mapper
+package com.cometexpress.rxjavastudy.data.remote.mapper
 
 import com.cometexpress.rxjavastudy.common.Constant
 import com.cometexpress.rxjavastudy.data.EntityMapper
-import com.cometexpress.rxjavastudy.data.dto.heroes.RoleDTO
+import com.cometexpress.rxjavastudy.data.remote.dto.heroes.RoleDTO
 import com.cometexpress.rxjavastudy.domain.entity.heroes.RoleEntity
 
 object RoleListEntityMapper : EntityMapper<List<RoleDTO>, List<RoleEntity>> {

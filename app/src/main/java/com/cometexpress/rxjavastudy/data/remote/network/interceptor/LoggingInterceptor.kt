@@ -1,4 +1,4 @@
-package com.cometexpress.rxjavastudy.data.network.interceptor
+package com.cometexpress.rxjavastudy.data.remote.network.interceptor
 
 import android.util.Log
 import com.cometexpress.rxjavastudy.common.extension.isJsonArray

@@ -1,4 +1,4 @@
-package com.cometexpress.rxjavastudy.data.mapper
+package com.cometexpress.rxjavastudy.data.remote.mapper
 
 //object HeroEntityMapper : EntityMapper<HeroDTO, HeroEntity> {
 //    override fun asEntity(dto: HeroDTO): HeroEntity {

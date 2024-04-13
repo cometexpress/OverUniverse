@@ -1,4 +1,4 @@
-package com.cometexpress.rxjavastudy.data.network
+package com.cometexpress.rxjavastudy.data.remote.network
 
 /**
  * DI 적용 전 사용 했던 APIService
