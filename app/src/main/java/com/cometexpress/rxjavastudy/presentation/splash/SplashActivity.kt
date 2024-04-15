@@ -25,16 +25,16 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>(ActivitySplashBinding
     private fun bind() {
         vm.completeRoles
             .subscribeOn(AndroidSchedulers.mainThread())
-            .delay(3, TimeUnit.SECONDS)
+            .delay(1, TimeUnit.SECONDS)
             .subscribe {
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }
             .also { compositeDisposable.add(it) }
-        
-        vm.isLoading.subscribe { isLoading ->
-            binding.loadingView.isVisible = isLoading
-        }.also { compositeDisposable.add(it) }
+
+//        vm.isLoading.subscribe { isLoading ->
+//            binding.loadingView.isVisible = isLoading
+//        }.also { compositeDisposable.add(it) }
 
         vm.toastMessage.subscribe { message ->
             showToast(message)

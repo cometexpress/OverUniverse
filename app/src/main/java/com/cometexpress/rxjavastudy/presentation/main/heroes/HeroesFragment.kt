@@ -4,9 +4,13 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.fragment.app.activityViewModels
+import androidx.viewpager2.widget.ViewPager2
 import com.cometexpress.rxjavastudy.common.base.BaseFragment
 import com.cometexpress.rxjavastudy.common.extension.showToast
 import com.cometexpress.rxjavastudy.databinding.FragmentHeroesBinding
+import com.cometexpress.rxjavastudy.domain.entity.heroes.HeroEntity
+import com.cometexpress.rxjavastudy.domain.entity.heroes.HeroType
+import com.google.android.material.tabs.TabLayoutMediator
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -19,15 +23,43 @@ class HeroesFragment : BaseFragment<FragmentHeroesBinding>(FragmentHeroesBinding
 
     private val vm: HeroesVM by activityViewModels()
 
+    private val viewPagerAdapter by lazy { HeroesViewPagerAdapter() }
+
+    private var tabMenus = listOf<String>()
+    private var allHeroes = listOf<HeroEntity>()
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setViewPager()
         bind()
     }
 
+    private fun setViewPager() {
+        binding.viewpager.apply {
+            adapter = viewPagerAdapter
+            orientation = ViewPager2.ORIENTATION_HORIZONTAL
+            registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback(){
+                override fun onPageSelected(position: Int) {
+                    super.onPageSelected(position)
+                }
+            })
+        }
+
+        TabLayoutMediator(binding.tabLayout, binding.viewpager) { tab, position ->
+            tab.text = tabMenus[position]
+            binding.viewpager.setCurrentItem(tab.position, true)
+        }.attach()
+    }
+
     private fun bind() {
-        // TODO: RecyclerView 연결
+        vm.roles.subscribe {
+            tabMenus = it.map { roleEntity ->  roleEntity.name }
+        }.also { compositeDisposable.add(it) }
+
         vm.allHeroes.subscribe { heroes ->
-            binding.tvResult.text = heroes.toString()
+            allHeroes = heroes
+            val heroRole = heroes.groupBy { it.role }
+            viewPagerAdapter.setList(heroRole)
         }.also { compositeDisposable.add(it) }
 
         vm.isLoading.subscribe { isLoading ->
