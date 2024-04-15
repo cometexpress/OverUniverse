@@ -1,12 +1,17 @@
 package com.cometexpress.rxjavastudy.presentation.splash
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.viewModels
+import androidx.core.view.isVisible
 import com.cometexpress.rxjavastudy.common.base.BaseActivity
 import com.cometexpress.rxjavastudy.common.extension.showToast
 import com.cometexpress.rxjavastudy.databinding.ActivitySplashBinding
+import com.cometexpress.rxjavastudy.presentation.main.MainActivity
 import dagger.hilt.android.AndroidEntryPoint
+import io.reactivex.android.schedulers.AndroidSchedulers
+import java.util.concurrent.TimeUnit
 
 @AndroidEntryPoint
 class SplashActivity : BaseActivity<ActivitySplashBinding>(ActivitySplashBinding::inflate) {
@@ -18,12 +23,17 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>(ActivitySplashBinding
     }
 
     private fun bind() {
-        vm.roles.subscribe { roles ->
-            println(roles.toString())
-        }.also { compositeDisposable.add(it) }
-
+        vm.completeRoles
+            .subscribeOn(AndroidSchedulers.mainThread())
+            .delay(3, TimeUnit.SECONDS)
+            .subscribe {
+                startActivity(Intent(this, MainActivity::class.java))
+                finish()
+            }
+            .also { compositeDisposable.add(it) }
+        
         vm.isLoading.subscribe { isLoading ->
-            Log.i("info", "로딩상태 = $isLoading")
+            binding.loadingView.isVisible = isLoading
         }.also { compositeDisposable.add(it) }
 
         vm.toastMessage.subscribe { message ->

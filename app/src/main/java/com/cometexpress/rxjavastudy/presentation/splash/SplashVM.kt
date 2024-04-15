@@ -10,6 +10,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import io.reactivex.subjects.BehaviorSubject
+import io.reactivex.subjects.CompletableSubject
 import io.reactivex.subjects.PublishSubject
 import javax.inject.Inject
 
@@ -20,7 +21,9 @@ class SplashVM @Inject constructor(
 
     private val compositeDisposable = CompositeDisposable()
 
-    var roles: BehaviorSubject<List<RoleEntity>> = BehaviorSubject.create()
+//    var roles: BehaviorSubject<List<RoleEntity>> = BehaviorSubject.create()
+
+    var completeRoles = CompletableSubject.create()
 
     var isLoading: PublishSubject<Boolean> = PublishSubject.create()
 
@@ -39,8 +42,8 @@ class SplashVM @Inject constructor(
             .subscribe({ response ->
                 when (response) {
                     is APIResult.Success -> {
-                        // TODO: 로컬 DB에 저장 시킨 후 메인으로 이동
-                        roles.onNext(response.data.toMutableList())
+                        completeRoles.onComplete()
+//                        roles.onNext(response.data.toMutableList())
                     }
 
                     is APIResult.Error -> {
