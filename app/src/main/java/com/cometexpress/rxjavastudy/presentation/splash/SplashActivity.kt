@@ -25,7 +25,7 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>(ActivitySplashBinding
     private fun bind() {
         vm.completeRoles
             .subscribeOn(AndroidSchedulers.mainThread())
-            .delay(1, TimeUnit.SECONDS)
+            .delay(500, TimeUnit.MILLISECONDS)
             .subscribe {
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()

@@ -4,8 +4,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.cometexpress.rxjavastudy.common.extension.fromDpToPx
 import com.cometexpress.rxjavastudy.databinding.VpItemHeroesBinding
 import com.cometexpress.rxjavastudy.domain.entity.heroes.HeroEntity
+import com.cometexpress.rxjavastudy.presentation.main.adapter_decoration.GridSpacingItemDecoration
 
 class HeroesViewPagerAdapter: RecyclerView.Adapter<HeroesViewPagerAdapter.PagerViewHolder>() {
 
@@ -35,7 +37,8 @@ class HeroesViewPagerAdapter: RecyclerView.Adapter<HeroesViewPagerAdapter.PagerV
         fun bind(items: List<HeroEntity>) {
             itemBinding.rvHero.apply {
                 adapter = HeroAdapter(items)
-                layoutManager = GridLayoutManager(itemBinding.root.context,3)
+                layoutManager = GridLayoutManager(itemBinding.root.context, 3)
+                addItemDecoration(GridSpacingItemDecoration(spanCount = 3, spacing = 12f.fromDpToPx()))
                 setHasFixedSize(true)
             }
         }
