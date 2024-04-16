@@ -1,15 +1,14 @@
 package com.cometexpress.rxjavastudy.presentation.main.heroes
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
+import androidx.core.view.isVisible
 import androidx.fragment.app.activityViewModels
 import androidx.viewpager2.widget.ViewPager2
 import com.cometexpress.rxjavastudy.common.base.BaseFragment
 import com.cometexpress.rxjavastudy.common.extension.showToast
 import com.cometexpress.rxjavastudy.databinding.FragmentHeroesBinding
 import com.cometexpress.rxjavastudy.domain.entity.heroes.HeroEntity
-import com.cometexpress.rxjavastudy.domain.entity.heroes.HeroType
 import com.google.android.material.tabs.TabLayoutMediator
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -23,7 +22,14 @@ class HeroesFragment : BaseFragment<FragmentHeroesBinding>(FragmentHeroesBinding
 
     private val vm: HeroesVM by activityViewModels()
 
-    private val viewPagerAdapter by lazy { HeroesViewPagerAdapter() }
+    private val viewPagerAdapter by lazy {
+        HeroesViewPagerAdapter(object : HeroAdapter.OnHeroItemClickListener {
+            override fun heroClick(hero: HeroEntity) {
+                // TODO: Detail 페이지로 데이터 전달 및 이동
+                activity?.showToast(hero.name)
+            }
+        })
+    }
 
     private var tabMenus = listOf<String>()
     private var allHeroes = listOf<HeroEntity>()
@@ -38,7 +44,7 @@ class HeroesFragment : BaseFragment<FragmentHeroesBinding>(FragmentHeroesBinding
         binding.viewpager.apply {
             adapter = viewPagerAdapter
             orientation = ViewPager2.ORIENTATION_HORIZONTAL
-            registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback(){
+            registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
                 override fun onPageSelected(position: Int) {
                     super.onPageSelected(position)
                 }
@@ -53,7 +59,7 @@ class HeroesFragment : BaseFragment<FragmentHeroesBinding>(FragmentHeroesBinding
 
     private fun bind() {
         vm.roles.subscribe {
-            tabMenus = it.map { roleEntity ->  roleEntity.name }
+            tabMenus = it.map { roleEntity -> roleEntity.name }
         }.also { compositeDisposable.add(it) }
 
         vm.allHeroes.subscribe { heroes ->
@@ -63,11 +69,12 @@ class HeroesFragment : BaseFragment<FragmentHeroesBinding>(FragmentHeroesBinding
         }.also { compositeDisposable.add(it) }
 
         vm.isLoading.subscribe { isLoading ->
-            Log.i("info", "로딩상태 = $isLoading")
+            binding.loadingView.isVisible = isLoading
         }.also { compositeDisposable.add(it) }
 
         vm.toastMessage.subscribe { message ->
             activity?.showToast(message)
         }.also { compositeDisposable.add(it) }
     }
+
 }

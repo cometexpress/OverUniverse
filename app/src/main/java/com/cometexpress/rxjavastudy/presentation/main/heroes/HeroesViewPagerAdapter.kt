@@ -9,7 +9,9 @@ import com.cometexpress.rxjavastudy.databinding.VpItemHeroesBinding
 import com.cometexpress.rxjavastudy.domain.entity.heroes.HeroEntity
 import com.cometexpress.rxjavastudy.presentation.main.adapter_decoration.GridSpacingItemDecoration
 
-class HeroesViewPagerAdapter: RecyclerView.Adapter<HeroesViewPagerAdapter.PagerViewHolder>() {
+class HeroesViewPagerAdapter(
+    private val onItemClickListener: HeroAdapter.OnHeroItemClickListener
+): RecyclerView.Adapter<HeroesViewPagerAdapter.PagerViewHolder>() {
 
     private var allItems = mapOf<String, List<HeroEntity>>()
 
@@ -36,7 +38,11 @@ class HeroesViewPagerAdapter: RecyclerView.Adapter<HeroesViewPagerAdapter.PagerV
 
         fun bind(items: List<HeroEntity>) {
             itemBinding.rvHero.apply {
-                adapter = HeroAdapter(items)
+                adapter = HeroAdapter(items, onItemClickListener = object: HeroAdapter.OnHeroItemClickListener{
+                    override fun heroClick(hero: HeroEntity) {
+                        onItemClickListener.heroClick(hero)
+                    }
+                })
                 layoutManager = GridLayoutManager(itemBinding.root.context, 3)
                 addItemDecoration(GridSpacingItemDecoration(spanCount = 3, spacing = 12f.fromDpToPx()))
                 setHasFixedSize(true)
