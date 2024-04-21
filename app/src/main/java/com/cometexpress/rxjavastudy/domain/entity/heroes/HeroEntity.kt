@@ -1,8 +1,12 @@
 package com.cometexpress.rxjavastudy.domain.entity.heroes
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity
 data class HeroEntity(
-    var key: String,
-    var name: String,
-    var image: String,
-    var role: String
+    @PrimaryKey val key: String,
+    val name: String,
+    val image: String,
+    val role: String
 )

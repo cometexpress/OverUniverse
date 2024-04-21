@@ -2,9 +2,7 @@ package com.cometexpress.rxjavastudy.presentation.splash
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.viewModels
-import androidx.core.view.isVisible
 import com.cometexpress.rxjavastudy.common.base.BaseActivity
 import com.cometexpress.rxjavastudy.common.extension.showToast
 import com.cometexpress.rxjavastudy.databinding.ActivitySplashBinding
@@ -31,10 +29,6 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>(ActivitySplashBinding
                 finish()
             }
             .also { compositeDisposable.add(it) }
-
-//        vm.isLoading.subscribe { isLoading ->
-//            binding.loadingView.isVisible = isLoading
-//        }.also { compositeDisposable.add(it) }
 
         vm.toastMessage.subscribe { message ->
             showToast(message)

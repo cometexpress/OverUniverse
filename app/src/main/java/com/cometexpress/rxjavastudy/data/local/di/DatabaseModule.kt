@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.room.Room
 import com.cometexpress.rxjavastudy.data.local.dao.RoleDao
 import com.cometexpress.rxjavastudy.data.local.OverUniverseDatabase
+import com.cometexpress.rxjavastudy.data.local.dao.HeroDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -27,8 +28,13 @@ internal object DatabaseModule {
 
     @Provides
     @Singleton
-    fun providePokemonDao(appDatabase: OverUniverseDatabase): RoleDao {
+    fun provideRoleDao(appDatabase: OverUniverseDatabase): RoleDao {
         return appDatabase.roleDao()
     }
 
+    @Provides
+    @Singleton
+    fun provideHeroDao(appDatabase: OverUniverseDatabase): HeroDao {
+        return appDatabase.heroDao()
+    }
 }
