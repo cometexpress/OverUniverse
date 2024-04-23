@@ -9,10 +9,10 @@ object RoleListEntityMapper : EntityMapper<List<RoleDTO>, List<RoleEntity>> {
     override fun asEntity(dto: List<RoleDTO>): List<RoleEntity> {
         return dto.map { dto ->
             RoleEntity(
-                key = dto.key ?: Constant.Server.DATA_ERROR,
-                name = dto.name ?: Constant.Server.DATA_ERROR,
-                description = dto.description ?: Constant.Server.DATA_ERROR,
-                icon = dto.icon ?: Constant.Server.DATA_ERROR
+                key = dto.key ?: Constant.Server.DATA_ERROR_BY_STRING,
+                name = dto.name ?: Constant.Server.DATA_ERROR_BY_STRING,
+                description = dto.description ?: Constant.Server.DATA_ERROR_BY_STRING,
+                icon = dto.icon ?: Constant.Server.DATA_ERROR_BY_STRING
             )
         }
     }

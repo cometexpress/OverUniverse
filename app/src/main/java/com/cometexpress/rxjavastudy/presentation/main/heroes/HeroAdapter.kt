@@ -30,7 +30,7 @@ class HeroAdapter(
         holder.bind(item)
     }
 
-    inner class HeroViewHolder(val itemBinding: ItemHeroBinding) : RecyclerView.ViewHolder(itemBinding.root) {
+    inner class HeroViewHolder(private val itemBinding: ItemHeroBinding) : RecyclerView.ViewHolder(itemBinding.root) {
 
         init {
             itemBinding.ivThumb.setOnClickListener {

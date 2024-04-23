@@ -9,10 +9,10 @@ object HeroListEntityMapper : EntityMapper<List<HeroDTO>, List<HeroEntity>> {
     override fun asEntity(dto: List<HeroDTO>): List<HeroEntity> {
         return dto.map { dto ->
             HeroEntity(
-                key = dto.key ?: Constant.Server.DATA_ERROR,
-                name = dto.name ?: Constant.Server.DATA_ERROR,
-                image = dto.portrait ?: Constant.Server.DATA_ERROR,
-                role = dto.role ?: Constant.Server.DATA_ERROR
+                key = dto.key ?: Constant.Server.DATA_ERROR_BY_STRING,
+                name = dto.name ?: Constant.Server.DATA_ERROR_BY_STRING,
+                image = dto.portrait ?: Constant.Server.DATA_ERROR_BY_STRING,
+                role = dto.role ?: Constant.Server.DATA_ERROR_BY_STRING
             )
         }
     }

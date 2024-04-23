@@ -1,5 +1,6 @@
 package com.cometexpress.rxjavastudy.presentation.main.heroes
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.core.view.isVisible
@@ -9,6 +10,7 @@ import com.cometexpress.rxjavastudy.common.base.BaseFragment
 import com.cometexpress.rxjavastudy.common.extension.showToast
 import com.cometexpress.rxjavastudy.databinding.FragmentHeroesBinding
 import com.cometexpress.rxjavastudy.domain.entity.heroes.HeroEntity
+import com.cometexpress.rxjavastudy.presentation.main.hero_info.HeroInfoActivity
 import com.google.android.material.tabs.TabLayoutMediator
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -25,8 +27,11 @@ class HeroesFragment : BaseFragment<FragmentHeroesBinding>(FragmentHeroesBinding
     private val viewPagerAdapter by lazy {
         HeroesViewPagerAdapter(object : HeroAdapter.OnHeroItemClickListener {
             override fun heroClick(hero: HeroEntity) {
-                // TODO: Detail 페이지로 데이터 전달 및 이동
-                activity?.showToast(hero.name)
+                activity?.let {
+                    val intent = Intent(it, HeroInfoActivity::class.java)
+                    intent.putExtra("heroKey", hero.key)
+                    startActivity(intent)
+                }
             }
         })
     }

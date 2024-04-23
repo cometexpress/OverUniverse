@@ -25,15 +25,15 @@ class HeroesVM @Inject constructor(
     private val compositeDisposable = CompositeDisposable()
 
     private var _roles: List<RoleEntity> = listOf()
-    var roles: BehaviorSubject<List<RoleEntity>> = BehaviorSubject.create()
+    val roles: BehaviorSubject<List<RoleEntity>> = BehaviorSubject.create()
 
-    var allHeroes: BehaviorSubject<List<HeroEntity>> = BehaviorSubject.create()
+    val allHeroes: BehaviorSubject<List<HeroEntity>> = BehaviorSubject.create()
 
-    var toastMessage: PublishSubject<String> = PublishSubject.create()
+    val toastMessage: PublishSubject<String> = PublishSubject.create()
 
-    var isLoading: PublishSubject<Boolean> = PublishSubject.create()
+    val isLoading: PublishSubject<Boolean> = PublishSubject.create()
 
-    private var _arrError = mutableListOf<ErrorModel>()
+    private val _arrError = mutableListOf<ErrorModel>()
 
     init {
         getAllData()
