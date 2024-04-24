@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.cometexpress.rxjavastudy"
+    namespace = "com.cometexpress.overuniverse"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.cometexpress.rxjavastudy"
+        applicationId = "com.cometexpress.overuniverse"
         minSdk = 28
         targetSdk = 34
         versionCode = 1
