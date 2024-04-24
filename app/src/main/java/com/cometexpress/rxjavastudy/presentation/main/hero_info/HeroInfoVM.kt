@@ -34,9 +34,13 @@ class HeroInfoVM @Inject constructor(
             .doOnSubscribe { isLoading.onNext(true) }
             .doFinally { isLoading.onNext(false) }
             .subscribe({ response ->
+
                 when(response) {
                     is APIResult.Success -> heroInfo.onNext(response.data)
-                    is APIResult.Error -> toastMessage.onNext(response.error.msg)
+                    is APIResult.Error -> {
+                        Log.e("error", response.error.msg)
+                        toastMessage.onNext(response.error.msg)
+                    }
                 }
             }, { error ->
                 Log.e(this.javaClass.simpleName, error.toString())

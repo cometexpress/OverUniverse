@@ -6,7 +6,7 @@ import com.cometexpress.rxjavastudy.common.Constant
 
 @Entity
 data class HeroInfoEntity(
-    @PrimaryKey var key: String,
+    @PrimaryKey var key: String = "",
     var abilities: List<HeroInfoEntityAbility>,
     var age: Int,
     var birthday: String,
@@ -18,8 +18,8 @@ data class HeroInfoEntity(
     var role: String,
     var story: HeroInfoEntityStory
 ) {
-    constructor(): this(
-        Constant.Server.DATA_ERROR_BY_STRING,
+    constructor(key: String): this(
+        key,
         listOf(),
         0,
         "",

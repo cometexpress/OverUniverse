@@ -14,10 +14,10 @@ interface HeroDao {
     @Query("SELECT * FROM HeroEntity")
     fun getAll(): Flowable<List<HeroEntity>>
 
-    @Query("SELECT * FROM HeroEntity WHERE 'role' IN (:role)")
+    @Query("SELECT * FROM HeroEntity WHERE role = :role")
     fun loadAllByRole(role: String): Flowable<List<HeroEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertHeroList(list: List<HeroEntity>): Completable
+    fun insertHeroList(list: List<HeroEntity>)
 
 }

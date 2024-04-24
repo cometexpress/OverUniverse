@@ -11,10 +11,10 @@ import io.reactivex.Flowable
 @Dao
 interface HeroInfoDao {
 
-    @Query("SELECT * FROM HeroInfoEntity WHERE 'key' IN (:heroKey)")
+    @Query("SELECT * FROM HeroInfoEntity WHERE `key` = :heroKey")
     fun loadByHeroKey(heroKey: String): Flowable<HeroInfoEntity>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertHeroInfo(entity: HeroInfoEntity): Completable
+    fun insertHeroInfo(entity: HeroInfoEntity)
 
 }

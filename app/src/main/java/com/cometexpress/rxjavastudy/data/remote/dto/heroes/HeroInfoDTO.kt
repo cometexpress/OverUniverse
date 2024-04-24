@@ -6,7 +6,7 @@ import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
 data class HeroInfoDTO(
-    var key: String,    // 해당 키는 영웅 목록에서 가져와서 업데이트
+    var key: String = "",    // 해당 키는 영웅 목록에서 가져와서 업데이트
     @Json(name = "abilities")
     var abilities: List<HeroInfoAbility?>?,
     @Json(name = "age")
