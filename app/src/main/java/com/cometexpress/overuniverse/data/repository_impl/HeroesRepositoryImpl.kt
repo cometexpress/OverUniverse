@@ -41,7 +41,7 @@ class HeroesRepositoryImpl @Inject constructor(
                                 }
                             } else {
                                 val code = response.code()
-                                val message = APIError.HeroesAPI.from(code)?.message ?: ""
+                                val message = APIError.ErrorHeroesAPI.from(code)?.message ?: ""
                                 APIResult.Error(ErrorModel(code = code, msg = message))
                             }
                         }
@@ -77,7 +77,7 @@ class HeroesRepositoryImpl @Inject constructor(
                                 }
                             } else {
                                 val code = response.code()
-                                val message = APIError.HeroesAPI.from(code)?.message ?: ""
+                                val message = APIError.ErrorHeroesAPI.from(code)?.message ?: ""
                                 APIResult.Error(ErrorModel(code = code, msg = message))
                             }
                         }
@@ -108,7 +108,7 @@ class HeroesRepositoryImpl @Inject constructor(
                                 APIResult.Success(responseEntity)
                             } else {
                                 val code = response.code()
-                                val message = APIError.HeroesAPI.from(code)?.message ?: ""
+                                val message = APIError.ErrorHeroesAPI.from(code)?.message ?: ""
                                 APIResult.Error(ErrorModel(code = code, msg = message))
                             }
                         }

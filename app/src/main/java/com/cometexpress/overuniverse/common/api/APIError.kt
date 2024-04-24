@@ -28,14 +28,15 @@ sealed class APIError{
             is Code -> errorMsg
         }
 
-    enum class HeroesAPI(val code: Int, val message: String) {
-        ValidationError(422, "잘못된 요청 입니다"),
-        InternalServerError(500, "인터넷 서버 오류 입니다"),
-        BlizzardServerError(504, "블리자드 서버 오류 입니다")
+    enum class ErrorHeroesAPI(val code: Int, val message: String) {
+        NotFoundHero(422, "알 수 없는 영웅 입니다"),
+        Validation(422, "잘못된 요청 입니다"),
+        InternalServer(500, "인터넷 서버 오류 입니다"),
+        BlizzardServer(504, "블리자드 서버 오류 입니다")
         ;
 
         companion object {
-            fun from(code: Int): HeroesAPI? = HeroesAPI.entries.find { it.code == code }
+            fun from(code: Int): ErrorHeroesAPI? = ErrorHeroesAPI.entries.find { it.code == code }
         }
     }
 }
