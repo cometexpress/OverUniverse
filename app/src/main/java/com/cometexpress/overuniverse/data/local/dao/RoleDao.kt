@@ -5,7 +5,6 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.cometexpress.overuniverse.domain.entity.heroes.RoleEntity
-import io.reactivex.Completable
 import io.reactivex.Flowable
 
 @Dao
@@ -17,7 +16,7 @@ interface RoleDao {
     fun loadAllByRole(role: String): Flowable<List<RoleEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertRoleList(list: List<RoleEntity>): Completable
+    fun insertRoleList(list: List<RoleEntity>)
 
 //    @Query(
 //        "SELECT * FROM user WHERE first_name LIKE :first AND " +

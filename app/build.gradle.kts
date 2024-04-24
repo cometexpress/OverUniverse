@@ -20,6 +20,11 @@ android {
     }
 
     buildTypes {
+
+        debug {
+            isMinifyEnabled = false
+        }
+
         release {
             isMinifyEnabled = false
             proguardFiles(
@@ -36,6 +41,7 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures {
+        buildConfig = true
         viewBinding = true
     }
 }
@@ -49,6 +55,9 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.fragment)
     implementation(libs.androidx.constraintlayout)
+
+    // log
+    implementation(libs.logger)
 
     // viewModel
     implementation(libs.viewmodel)

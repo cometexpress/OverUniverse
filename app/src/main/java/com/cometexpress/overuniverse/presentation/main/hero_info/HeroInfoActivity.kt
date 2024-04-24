@@ -1,11 +1,11 @@
 package com.cometexpress.overuniverse.presentation.main.hero_info
 
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.viewModels
 import com.cometexpress.overuniverse.common.base.BaseActivity
 import com.cometexpress.overuniverse.common.extension.showToast
 import com.cometexpress.overuniverse.databinding.ActivityHeroInfoBinding
+import com.orhanobut.logger.Logger
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -24,7 +24,7 @@ class HeroInfoActivity : BaseActivity<ActivityHeroInfoBinding>(ActivityHeroInfoB
     private fun bind() {
         vm.heroInfo
             .subscribe { heroInfo ->
-                Log.i("영웅정보", "영웅 정보 $heroInfo")
+                Logger.i("영웅 정보 = $heroInfo")
             }
             .also { compositeDisposable.add(it) }
 

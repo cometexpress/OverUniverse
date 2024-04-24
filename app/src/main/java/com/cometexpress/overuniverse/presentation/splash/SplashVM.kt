@@ -1,9 +1,9 @@
 package com.cometexpress.overuniverse.presentation.splash
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.cometexpress.overuniverse.common.api.APIResult
 import com.cometexpress.overuniverse.domain.repository.HeroesRepository
+import com.orhanobut.logger.Logger
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
@@ -49,7 +49,7 @@ class SplashVM @Inject constructor(
                     }
                 }
             }, { error ->
-                Log.e(this.javaClass.simpleName, error.toString())
+                Logger.e(error.localizedMessage ?: "")
             })
             .also { compositeDisposable.add(it) }
     }

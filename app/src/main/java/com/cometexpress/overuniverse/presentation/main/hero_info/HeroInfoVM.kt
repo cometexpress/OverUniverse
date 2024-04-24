@@ -1,10 +1,10 @@
 package com.cometexpress.overuniverse.presentation.main.hero_info
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.cometexpress.overuniverse.common.api.APIResult
 import com.cometexpress.overuniverse.domain.entity.heroes.HeroInfoEntity
 import com.cometexpress.overuniverse.domain.repository.HeroesRepository
+import com.orhanobut.logger.Logger
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
@@ -19,7 +19,6 @@ class HeroInfoVM @Inject constructor(
 
     private val compositeDisposable = CompositeDisposable()
 
-//    val heroInfo = BehaviorSubject.createDefault(HeroInfoEntity())
     val heroInfo: PublishSubject<HeroInfoEntity> = PublishSubject.create()
 
     val toastMessage: PublishSubject<String> = PublishSubject.create()
@@ -37,12 +36,12 @@ class HeroInfoVM @Inject constructor(
                 when(response) {
                     is APIResult.Success -> heroInfo.onNext(response.data)
                     is APIResult.Error -> {
-                        Log.e("error", response.error.msg)
+                        Logger.e(response.error.msg)
                         toastMessage.onNext(response.error.msg)
                     }
                 }
             }, { error ->
-                Log.e(this.javaClass.simpleName, error.toString())
+                Logger.e(error.localizedMessage ?: "")
             })
             .also { compositeDisposable.add(it) }
     }

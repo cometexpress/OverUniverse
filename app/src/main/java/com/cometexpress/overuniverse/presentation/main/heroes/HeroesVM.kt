@@ -1,6 +1,5 @@
 package com.cometexpress.overuniverse.presentation.main.heroes
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.cometexpress.overuniverse.common.api.APIResult
 import com.cometexpress.overuniverse.data.ErrorModel
@@ -8,6 +7,7 @@ import com.cometexpress.overuniverse.domain.entity.heroes.HeroEntity
 import com.cometexpress.overuniverse.domain.entity.heroes.HeroType
 import com.cometexpress.overuniverse.domain.entity.heroes.RoleEntity
 import com.cometexpress.overuniverse.domain.repository.HeroesRepository
+import com.orhanobut.logger.Logger
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -85,7 +85,7 @@ class HeroesVM @Inject constructor(
                     allHeroes.onNext(heroes)
                 }
             }, { error ->
-                Log.e(this.javaClass.simpleName, error.toString())
+                Logger.e(error.localizedMessage ?: "")
             })
             .also { compositeDisposable.add(it) }
     }
@@ -110,39 +110,10 @@ class HeroesVM @Inject constructor(
                     }
                 }
             }, { error ->
-                Log.e(this.javaClass.simpleName, error.toString())
+                Logger.e(error.localizedMessage ?: "")
             })
             .also { compositeDisposable.add(it) }
     }
-
-//    fun getHeroes(role: String) {
-//        heroesRepository.getHeroes(role)
-//            .subscribeOn(Schedulers.io())
-//            .observeOn(AndroidSchedulers.mainThread())
-//            .doOnSubscribe { isLoading.onNext(true) }
-//            .doFinally { isLoading.onNext(false) }
-//            .subscribe({ response ->
-//                when (response) {
-//                    is APIResult.Success -> {
-//                        val type = HeroType.from(role)
-//                        type?.let {
-//                            when (it) {
-//                                HeroType.TANK -> tankHeroes.onNext(response.data.toMutableList())
-//                                HeroType.DAMAGE -> damageHeroes.onNext(response.data.toMutableList())
-//                                HeroType.SUPPORT -> supportHeroes.onNext(response.data.toMutableList())
-//                            }
-//                            allHeroes.onNext(response.data.toMutableList())
-//                        }
-//                    }
-//                    is APIResult.Error -> {
-//                        toastMessage.onNext(response.error.msg)
-//                    }
-//                }
-//            }, { error ->
-//                Log.e(this.javaClass.simpleName, error.toString())
-//            })
-//            .also { compositeDisposable.add(it) }
-//    }
 
     override fun onCleared() {
         if (!compositeDisposable.isDisposed) {

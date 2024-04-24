@@ -12,7 +12,6 @@ constraintlayout = "2.1.4"
 lifecycle = "2.7.0"
 fragment = "1.6.2"
 hilt = "2.51"
-
 moshi = "1.15.1"
 retrofit = "2.9.0"
 rxJava2 = "2.2.21"
@@ -21,7 +20,7 @@ glide = "4.16.0"
 okhttp = "4.12.0"
 gson = "2.10.1"
 roomDB = "2.6.1"
-
+logger = "2.2.0"
 
 
 [libraries]
@@ -30,21 +29,18 @@ junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+logger = { module = "com.orhanobut:logger", version.ref = "logger" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-fragment = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragment" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
-
 viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
 viewmodel-savedstate = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-savedstate", version.ref = "lifecycle" }
-
 hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
-
 room = { group = "androidx.room", name = "room-runtime", version.ref = "roomDB" }
 room-compliler = { group = "androidx.room", name = "room-compiler", version.ref = "roomDB" }
 room-rxjava2 = { group = "androidx.room", name = "room-rxjava2", version.ref = "roomDB" }
-
 rxjava2 = { module = "io.reactivex.rxjava2:rxjava", version.ref = "rxJava2" }
 rxAndroid = { module = "io.reactivex.rxjava2:rxandroid", version.ref = "rxAndroid" }
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }

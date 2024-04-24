@@ -1,8 +1,8 @@
 package com.cometexpress.overuniverse.data.remote.network.interceptor
 
-import android.util.Log
 import com.cometexpress.overuniverse.common.extension.isJsonArray
 import com.cometexpress.overuniverse.common.extension.isJsonObject
+import com.orhanobut.logger.Logger
 import okhttp3.Interceptor
 import okhttp3.Response
 import okhttp3.internal.concurrent.TaskRunner.Companion.logger
@@ -20,23 +20,23 @@ class LoggingInterceptor : Interceptor {
             when {
                 message.isJsonObject() -> {
                     if(isShowLog) {
-                        Log.d("HttpLoggingInterceptor", JSONObject(message).toString(4))
+                        Logger.d(JSONObject(message).toString(4))
                     }
                 }
 
                 message.isJsonArray() -> {
                     if(isShowLog) {
-                        Log.d("HttpLoggingInterceptor", JSONObject(message).toString(4))
+                        Logger.d(JSONObject(message).toString(4))
                     }
                 }
 
                 else -> {
                     try {
                         if (isShowLog) {
-                            Log.d("HttpLoggingInterceptor", "else" + JSONObject(message).toString(4))
+                            Logger.d("else " + JSONObject(message).toString(4))
                         }
                     } catch (e: Exception) {
-                        Log.e("HttpLoggingInterceptor", "else $message")
+                        Logger.e("else $message")
                     }
                 }
             }
