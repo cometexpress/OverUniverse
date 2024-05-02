@@ -9,6 +9,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
+import io.reactivex.subjects.BehaviorSubject
 import io.reactivex.subjects.PublishSubject
 import javax.inject.Inject
 
@@ -23,16 +24,18 @@ class HeroInfoVM @Inject constructor(
 
     val toastMessage: PublishSubject<String> = PublishSubject.create()
 
-    val isLoading: PublishSubject<Boolean> = PublishSubject.create()
+    val isLoading = BehaviorSubject.createDefault(false)
 
     fun getHeroInfo(key: String) {
+
+        if (isLoading.value == true) return
+
         heroesRepository.getHeroInfo(heroKey = key)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .doOnSubscribe { isLoading.onNext(true) }
             .doFinally { isLoading.onNext(false) }
             .subscribe({ response ->
-
                 when(response) {
                     is APIResult.Success -> heroInfo.onNext(response.data)
                     is APIResult.Error -> {

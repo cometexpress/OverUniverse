@@ -14,4 +14,7 @@ object Constant {
         }
     }
 
+    object Intent {
+        const val HERO_KEY = "heroKey"
+    }
 }

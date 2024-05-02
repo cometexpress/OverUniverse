@@ -3,9 +3,12 @@ package com.cometexpress.overuniverse.presentation.main.heroes
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageView
+import androidx.core.app.ActivityOptionsCompat
 import androidx.core.view.isVisible
 import androidx.fragment.app.activityViewModels
 import androidx.viewpager2.widget.ViewPager2
+import com.cometexpress.overuniverse.common.Constant
 import com.cometexpress.overuniverse.common.base.BaseFragment
 import com.cometexpress.overuniverse.common.extension.showToast
 import com.cometexpress.overuniverse.databinding.FragmentHeroesBinding
@@ -13,6 +16,8 @@ import com.cometexpress.overuniverse.domain.entity.heroes.HeroEntity
 import com.cometexpress.overuniverse.presentation.main.hero_info.HeroInfoActivity
 import com.google.android.material.tabs.TabLayoutMediator
 import dagger.hilt.android.AndroidEntryPoint
+import androidx.core.util.Pair
+
 
 @AndroidEntryPoint
 class HeroesFragment : BaseFragment<FragmentHeroesBinding>(FragmentHeroesBinding::inflate) {
@@ -26,11 +31,15 @@ class HeroesFragment : BaseFragment<FragmentHeroesBinding>(FragmentHeroesBinding
 
     private val viewPagerAdapter by lazy {
         HeroesViewPagerAdapter(object : HeroAdapter.OnHeroItemClickListener {
-            override fun heroClick(hero: HeroEntity) {
+            override fun heroClick(thumbView: View, hero: HeroEntity) {
                 activity?.let {
+                    val optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(
+                        it,
+                        Pair(thumbView, thumbView.transitionName)
+                    )
                     val intent = Intent(it, HeroInfoActivity::class.java)
-                    intent.putExtra("heroKey", hero.key)
-                    startActivity(intent)
+                    intent.putExtra(Constant.Intent.HERO_KEY, hero.key)
+                    startActivity(intent, optionsCompat.toBundle())
                 }
             }
         })
@@ -50,9 +59,6 @@ class HeroesFragment : BaseFragment<FragmentHeroesBinding>(FragmentHeroesBinding
             adapter = viewPagerAdapter
             orientation = ViewPager2.ORIENTATION_HORIZONTAL
             registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
-                override fun onPageSelected(position: Int) {
-                    super.onPageSelected(position)
-                }
             })
         }
 

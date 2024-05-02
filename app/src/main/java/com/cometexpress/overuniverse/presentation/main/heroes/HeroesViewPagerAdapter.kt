@@ -1,13 +1,19 @@
 package com.cometexpress.overuniverse.presentation.main.heroes
 
+import android.content.Intent
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import androidx.core.app.ActivityOptionsCompat
+import androidx.core.util.Pair
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.cometexpress.overuniverse.common.Constant
 import com.cometexpress.overuniverse.common.extension.fromDpToPx
 import com.cometexpress.overuniverse.databinding.VpItemHeroesBinding
 import com.cometexpress.overuniverse.domain.entity.heroes.HeroEntity
 import com.cometexpress.overuniverse.presentation.main.adapter_decoration.GridSpacingItemDecoration
+import com.cometexpress.overuniverse.presentation.main.hero_info.HeroInfoActivity
 
 class HeroesViewPagerAdapter(
     private val onItemClickListener: HeroAdapter.OnHeroItemClickListener
@@ -39,8 +45,8 @@ class HeroesViewPagerAdapter(
         fun bind(items: List<HeroEntity>) {
             itemBinding.rvHero.apply {
                 adapter = HeroAdapter(items, onItemClickListener = object: HeroAdapter.OnHeroItemClickListener{
-                    override fun heroClick(hero: HeroEntity) {
-                        onItemClickListener.heroClick(hero)
+                    override fun heroClick(thumbView: View, hero: HeroEntity) {
+                        onItemClickListener.heroClick(thumbView, hero)
                     }
                 })
                 layoutManager = GridLayoutManager(itemBinding.root.context, 3)

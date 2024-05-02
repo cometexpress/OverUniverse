@@ -1,7 +1,9 @@
 package com.cometexpress.overuniverse.presentation.main.heroes
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.MultiTransformation
@@ -16,7 +18,7 @@ class HeroAdapter(
 ): RecyclerView.Adapter<HeroAdapter.HeroViewHolder>() {
 
     interface OnHeroItemClickListener {
-        fun heroClick(hero: HeroEntity)
+        fun heroClick(thumbView: View, hero: HeroEntity)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HeroViewHolder {
@@ -33,8 +35,8 @@ class HeroAdapter(
     inner class HeroViewHolder(private val itemBinding: ItemHeroBinding) : RecyclerView.ViewHolder(itemBinding.root) {
 
         init {
-            itemBinding.ivThumb.setOnClickListener {
-                onItemClickListener.heroClick(items[adapterPosition])
+            itemBinding.root.setOnClickListener {
+                onItemClickListener.heroClick(itemBinding.ivThumb, items[adapterPosition])
             }
         }
 
