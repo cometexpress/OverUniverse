@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/main_background"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".presentation.main.heroes.HeroesFragment">
 
@@ -11,9 +11,10 @@
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tabSelectedTextColor="@color/main"
-        app:tabTextColor="@color/light_gray"
-        app:tabIndicatorColor="@color/main"
+        app:tabSelectedTextColor="@color/primary"
+        android:background="@color/main_background"
+        app:tabTextColor="@color/txt_disabled"
+        app:tabIndicatorColor="@color/primary"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <androidx.viewpager2.widget.ViewPager2
