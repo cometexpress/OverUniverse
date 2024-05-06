@@ -7,4 +7,8 @@
     <color name="bottom_background">#202027</color>
     <color name="primary">#F1742B</color>
     <color name="txt_primary">#F9F9FD</color>
+    <color name="progress_normal">#ffffff</color>
+    <color name="progress_shields">#1DA8C3</color>
+    <color name="progress_armor">#BC6C2D</color>
+
 </resources>

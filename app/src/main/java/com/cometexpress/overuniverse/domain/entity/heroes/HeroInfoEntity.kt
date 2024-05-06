@@ -1,7 +1,18 @@
 package com.cometexpress.overuniverse.domain.entity.heroes
 
 import androidx.room.Entity
+import androidx.room.Ignore
 import androidx.room.PrimaryKey
+
+
+// HP 한칸당 탱커는 25, 딜러,힐러는 50
+fun HeroInfoEntity.getHpSize(): Int {
+    return if (role == HeroType.TANK.role) {
+        25
+    } else {
+        50
+    }
+}
 
 @Entity
 data class HeroInfoEntity(

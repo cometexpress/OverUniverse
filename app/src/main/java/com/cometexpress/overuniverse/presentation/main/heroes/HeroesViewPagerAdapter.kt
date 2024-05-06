@@ -1,19 +1,15 @@
 package com.cometexpress.overuniverse.presentation.main.heroes
 
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.app.ActivityOptionsCompat
-import androidx.core.util.Pair
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.cometexpress.overuniverse.common.Constant
-import com.cometexpress.overuniverse.common.extension.fromDpToPx
+import com.cometexpress.overuniverse.common.extension.dpToPx
+import com.cometexpress.overuniverse.common.extension.pxToDp
 import com.cometexpress.overuniverse.databinding.VpItemHeroesBinding
 import com.cometexpress.overuniverse.domain.entity.heroes.HeroEntity
 import com.cometexpress.overuniverse.presentation.main.adapter_decoration.GridSpacingItemDecoration
-import com.cometexpress.overuniverse.presentation.main.hero_info.HeroInfoActivity
 
 class HeroesViewPagerAdapter(
     private val onItemClickListener: HeroAdapter.OnHeroItemClickListener
@@ -21,7 +17,6 @@ class HeroesViewPagerAdapter(
 
     private var allItems = mapOf<String, List<HeroEntity>>()
 
-//    private lateinit var eventListener: OnHeroesViewPagerClickListener
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PagerViewHolder {
         val binding = VpItemHeroesBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return PagerViewHolder(binding)
@@ -40,7 +35,7 @@ class HeroesViewPagerAdapter(
         }
     }
 
-    inner class PagerViewHolder(val itemBinding: VpItemHeroesBinding) : RecyclerView.ViewHolder(itemBinding.root) {
+    inner class PagerViewHolder(private val itemBinding: VpItemHeroesBinding) : RecyclerView.ViewHolder(itemBinding.root) {
 
         fun bind(items: List<HeroEntity>) {
             itemBinding.rvHero.apply {
@@ -50,7 +45,10 @@ class HeroesViewPagerAdapter(
                     }
                 })
                 layoutManager = GridLayoutManager(itemBinding.root.context, 3)
-                addItemDecoration(GridSpacingItemDecoration(spanCount = 3, spacing = 12f.fromDpToPx()))
+                addItemDecoration(GridSpacingItemDecoration(
+                    spanCount = 3,
+                    spacing = itemBinding.root.context.dpToPx(12f))
+                )
                 setHasFixedSize(true)
             }
         }
