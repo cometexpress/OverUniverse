@@ -1,12 +1,14 @@
 package com.cometexpress.overuniverse.presentation.main.hero_info
 
 import android.os.Bundle
+import android.text.Html
 import android.view.View
 import androidx.activity.viewModels
 import androidx.core.view.doOnLayout
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
+import com.cometexpress.overuniverse.R
 import com.cometexpress.overuniverse.common.Constant
 import com.cometexpress.overuniverse.common.base.BaseActivity
 import com.cometexpress.overuniverse.common.extension.dpToPx
@@ -18,6 +20,9 @@ import com.cometexpress.overuniverse.domain.entity.heroes.HeroInfoEntity
 import com.cometexpress.overuniverse.domain.entity.heroes.getHpSize
 import com.orhanobut.logger.Logger
 import dagger.hilt.android.AndroidEntryPoint
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.schedulers.Schedulers
+import java.util.concurrent.TimeUnit
 
 
 @AndroidEntryPoint
@@ -52,7 +57,8 @@ class HeroInfoActivity : BaseActivity<ActivityHeroInfoBinding>(ActivityHeroInfoB
 
         binding.rvTotal.apply {
             adapter = hpAdapter
-            layoutManager = LinearLayoutManager(this@HeroInfoActivity, LinearLayoutManager.HORIZONTAL, false)
+            layoutManager =
+                LinearLayoutManager(this@HeroInfoActivity, LinearLayoutManager.HORIZONTAL, false)
             setHasFixedSize(true)
             isNestedScrollingEnabled = false
         }
@@ -60,6 +66,9 @@ class HeroInfoActivity : BaseActivity<ActivityHeroInfoBinding>(ActivityHeroInfoB
 
     private fun bind() {
         vm.heroInfo
+            .delay(100L, TimeUnit.MILLISECONDS)
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
             .subscribe { heroInfo ->
                 Logger.i("영웅 정보 = $heroInfo")
                 setData(heroInfo)
@@ -84,9 +93,8 @@ class HeroInfoActivity : BaseActivity<ActivityHeroInfoBinding>(ActivityHeroInfoB
         binding.tvRole.text = heroInfo.role.uppercase()
         binding.tvDescription.text = heroInfo.description
 
+        // HP RecyclerView
         val totalHp = heroInfo.hitpoints.total / heroInfo.getHpSize()
-
-        heroInfo.hitpoints.health
 
         val hpList = mutableListOf<HeroHPEntity>()
         val cntShield = heroInfo.hitpoints.shields / heroInfo.getHpSize()
@@ -104,18 +112,55 @@ class HeroInfoActivity : BaseActivity<ActivityHeroInfoBinding>(ActivityHeroInfoB
         }
 
         val itemWidth = (containerWidth / totalHp) - (this.dpToPx(2f))
-
         hpAdapter.setList(itemWidth, hpList)
 
+        binding.tvHp.text = Html.fromHtml(
+            getString(
+                R.string.hero_full_hp,
+                heroInfo.hitpoints.shields,
+                heroInfo.hitpoints.armor,
+                heroInfo.hitpoints.health
+            ),
+            Html.FROM_HTML_MODE_LEGACY
+        )
 
-        binding.tvNormal.text = "${heroInfo.hitpoints.health} / ${heroInfo.hitpoints.total}"
-        binding.pbNormal.max = heroInfo.hitpoints.total
-        binding.pbNormal.setProgress(heroInfo.hitpoints.health,true)
+        when {
+            heroInfo.hitpoints.shields == 0 && heroInfo.hitpoints.armor == 0 -> {
+                binding.tvHp.text = Html.fromHtml(
+                    getString(R.string.hero_only_hp, heroInfo.hitpoints.health),
+                    Html.FROM_HTML_MODE_LEGACY
+                )
+            }
+
+            heroInfo.hitpoints.shields == 0 -> {
+                binding.tvHp.text = Html.fromHtml(
+                    getString(
+                        R.string.hero_armor_hp,
+                        heroInfo.hitpoints.armor,
+                        heroInfo.hitpoints.health
+                    ),
+                    Html.FROM_HTML_MODE_LEGACY
+                )
+            }
+
+            heroInfo.hitpoints.armor == 0 -> {
+                binding.tvHp.text = Html.fromHtml(
+                    getString(
+                        R.string.hero_shield_hp,
+                        heroInfo.hitpoints.shields,
+                        heroInfo.hitpoints.health
+                    ),
+                    Html.FROM_HTML_MODE_LEGACY
+                )
+            }
+        }
     }
 
     override fun onClick(p0: View?) {
-        when(p0?.id) {
-            binding.ivBack.id -> { finish() }
+        when (p0?.id) {
+            binding.ivBack.id -> {
+                finish()
+            }
         }
     }
 }
