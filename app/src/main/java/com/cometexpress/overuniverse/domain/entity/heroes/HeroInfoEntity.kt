@@ -47,7 +47,8 @@ data class HeroInfoEntityAbility(
     var description: String,
     var icon: String,
     var name: String,
-    var video: HeroInfoEntityVideo
+    var video: HeroInfoEntityVideo,
+    var playWhenReady: Boolean = false
 )
 
 data class HeroInfoEntityChapter(

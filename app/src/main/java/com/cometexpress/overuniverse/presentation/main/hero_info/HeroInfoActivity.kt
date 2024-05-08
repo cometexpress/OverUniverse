@@ -17,6 +17,7 @@ import com.cometexpress.overuniverse.databinding.ActivityHeroInfoBinding
 import com.cometexpress.overuniverse.domain.entity.heroes.HeroHPEntity
 import com.cometexpress.overuniverse.domain.entity.heroes.HeroHPType
 import com.cometexpress.overuniverse.domain.entity.heroes.HeroInfoEntity
+import com.cometexpress.overuniverse.domain.entity.heroes.HeroInfoEntityAbility
 import com.cometexpress.overuniverse.domain.entity.heroes.getHpSize
 import com.orhanobut.logger.Logger
 import dagger.hilt.android.AndroidEntryPoint
@@ -40,6 +41,8 @@ class HeroInfoActivity : BaseActivity<ActivityHeroInfoBinding>(ActivityHeroInfoB
     private val heroAbilityAdapter by lazy { HeroAbilityAdapter() }
 
     private var containerWidth = 0
+
+    private var abilities = mutableListOf<HeroInfoEntityAbility>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -67,6 +70,20 @@ class HeroInfoActivity : BaseActivity<ActivityHeroInfoBinding>(ActivityHeroInfoB
             isNestedScrollingEnabled = false
         }
 
+        heroAbilityAdapter.setOnHeroAbilityListener(object : HeroAbilityAdapter.OnHeroAbilityListener{
+            override fun onPlay(item: HeroInfoEntityAbility) {
+                abilities.forEachIndexed { index, heroInfoEntityAbility ->
+                    if (abilities[index] == item) {
+                        abilities[index] = heroInfoEntityAbility.copy(playWhenReady = !item.playWhenReady)
+                    } else {
+                        abilities[index] = heroInfoEntityAbility.copy(playWhenReady = false)
+                    }
+                }
+
+                heroAbilityAdapter.setList(abilities)
+            }
+
+        })
         binding.rvAbility.apply {
             adapter = heroAbilityAdapter
             layoutManager =
@@ -84,7 +101,7 @@ class HeroInfoActivity : BaseActivity<ActivityHeroInfoBinding>(ActivityHeroInfoB
             .subscribe { heroInfo ->
                 Logger.i("영웅 정보 = $heroInfo")
                 setData(heroInfo)
-
+                abilities = heroInfo.abilities.toMutableList()
             }
             .also { compositeDisposable.add(it) }
 
