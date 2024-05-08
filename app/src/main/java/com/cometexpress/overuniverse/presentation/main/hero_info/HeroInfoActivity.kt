@@ -29,9 +29,15 @@ import java.util.concurrent.TimeUnit
 class HeroInfoActivity : BaseActivity<ActivityHeroInfoBinding>(ActivityHeroInfoBinding::inflate),
     View.OnClickListener {
 
+
+        companion object {
+            const val DELAY = 200L
+        }
+
     private val vm: HeroInfoVM by viewModels()
 
-    private lateinit var hpAdapter: TotalHeroHPAdapter
+    private val hpAdapter by lazy { TotalHeroHPAdapter() }
+    private val heroAbilityAdapter by lazy { HeroAbilityAdapter() }
 
     private var containerWidth = 0
 
@@ -53,8 +59,6 @@ class HeroInfoActivity : BaseActivity<ActivityHeroInfoBinding>(ActivityHeroInfoB
     private fun init() {
         binding.ivBack.setOnClickListener(this)
 
-        hpAdapter = TotalHeroHPAdapter()
-
         binding.rvTotal.apply {
             adapter = hpAdapter
             layoutManager =
@@ -62,16 +66,25 @@ class HeroInfoActivity : BaseActivity<ActivityHeroInfoBinding>(ActivityHeroInfoB
             setHasFixedSize(true)
             isNestedScrollingEnabled = false
         }
+
+        binding.rvAbility.apply {
+            adapter = heroAbilityAdapter
+            layoutManager =
+                LinearLayoutManager(this@HeroInfoActivity, LinearLayoutManager.VERTICAL, false)
+            setHasFixedSize(true)
+            isNestedScrollingEnabled = false
+        }
     }
 
     private fun bind() {
         vm.heroInfo
-            .delay(100L, TimeUnit.MILLISECONDS)
+            .delay(DELAY, TimeUnit.MILLISECONDS)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe { heroInfo ->
                 Logger.i("영웅 정보 = $heroInfo")
                 setData(heroInfo)
+
             }
             .also { compositeDisposable.add(it) }
 
@@ -154,6 +167,11 @@ class HeroInfoActivity : BaseActivity<ActivityHeroInfoBinding>(ActivityHeroInfoB
                 )
             }
         }
+
+        binding.rvAbility.postDelayed({
+            heroAbilityAdapter.setList(heroInfo.abilities)
+        }, DELAY)
+
     }
 
     override fun onClick(p0: View?) {

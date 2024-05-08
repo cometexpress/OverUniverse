@@ -99,6 +99,11 @@ dependencies {
     implementation(libs.room.rxjava2)
     kapt(libs.room.compliler)
 
+    // exoplayer
+    implementation(libs.media3.exoplayer)
+    implementation(libs.media3.exoplayer.dash)
+    implementation(libs.media3.ui)
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
