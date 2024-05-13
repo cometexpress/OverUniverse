@@ -46,7 +46,6 @@ class HeroInfoActivity : BaseActivity<ActivityHeroInfoBinding>(ActivityHeroInfoB
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         init()
         bind()
 
@@ -194,7 +193,7 @@ class HeroInfoActivity : BaseActivity<ActivityHeroInfoBinding>(ActivityHeroInfoB
     override fun onClick(p0: View?) {
         when (p0?.id) {
             binding.ivBack.id -> {
-                finish()
+                onBackPressedDispatcher.onBackPressed()
             }
         }
     }
