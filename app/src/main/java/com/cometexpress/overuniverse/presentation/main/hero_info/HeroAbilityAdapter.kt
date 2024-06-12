@@ -34,6 +34,7 @@ class HeroAbilityAdapter : RecyclerView.Adapter<HeroAbilityAdapter.ViewHolder>()
 
     fun setList(items: List<HeroInfoEntityAbility>) {
         if (items.isNotEmpty()) {
+            //test
             this.items = items
             notifyDataSetChanged()
         }
