@@ -1,0 +1,3 @@
+com.cometexpress.overuniverse.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

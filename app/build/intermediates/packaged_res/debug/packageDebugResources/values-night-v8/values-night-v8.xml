@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.RxJavaStudy" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        
+        <item name="android:statusBarColor">@color/main_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+    </style>
+    <style name="Theme.RxJavaStudy" parent="Base.Theme.RxJavaStudy"/>
+</resources>

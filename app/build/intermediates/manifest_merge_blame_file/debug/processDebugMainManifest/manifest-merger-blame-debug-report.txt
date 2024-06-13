@@ -1,0 +1,161 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.cometexpress.overuniverse"
+4    android:installLocation="preferExternal"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="28"
+10        android:targetSdkVersion="34" />
+11
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:6:5-67
+12-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[androidx.media3:media3-common:1.3.1] /Users/comet/.gradle/caches/transforms-3/58648528246767d9f9ca647c57eca918/transformed/media3-common-1.3.1/AndroidManifest.xml:22:5-79
+13-->[androidx.media3:media3-common:1.3.1] /Users/comet/.gradle/caches/transforms-3/58648528246767d9f9ca647c57eca918/transformed/media3-common-1.3.1/AndroidManifest.xml:22:22-76
+14
+15    <permission
+15-->[androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+16        android:name="com.cometexpress.overuniverse.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+16-->[androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+17        android:protectionLevel="signature" />
+17-->[androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+18
+19    <uses-permission android:name="com.cometexpress.overuniverse.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+19-->[androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+19-->[androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+20
+21    <application
+21-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:8:5-34:19
+22        android:name="com.cometexpress.overuniverse.OverUniverseApp"
+22-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:9:9-40
+23        android:allowBackup="true"
+23-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:10:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+25        android:dataExtractionRules="@xml/data_extraction_rules"
+25-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:11:9-65
+26        android:debuggable="true"
+27        android:extractNativeLibs="false"
+28        android:fullBackupContent="@xml/backup_rules"
+28-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:12:9-54
+29        android:icon="@mipmap/ic_launcher"
+29-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:13:9-43
+30        android:label="@string/app_name"
+30-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:14:9-41
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:15:9-54
+32        android:supportsRtl="true"
+32-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:16:9-35
+33        android:testOnly="true"
+34        android:theme="@style/Theme.RxJavaStudy" >
+34-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:17:9-49
+35        <activity
+35-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:19:9-21:40
+36            android:name="com.cometexpress.overuniverse.presentation.main.hero_info.HeroInfoActivity"
+36-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:20:13-73
+37            android:exported="false" />
+37-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:21:13-37
+38        <activity
+38-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:22:9-30:20
+39            android:name="com.cometexpress.overuniverse.presentation.splash.SplashActivity"
+39-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:23:13-63
+40            android:exported="true" >
+40-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:24:13-36
+41            <intent-filter>
+41-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:25:13-29:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:26:17-69
+42-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:26:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:28:17-77
+44-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:28:27-74
+45            </intent-filter>
+46        </activity>
+47        <activity
+47-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:31:9-33:49
+48            android:name="com.cometexpress.overuniverse.presentation.main.MainActivity"
+48-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:32:13-59
+49            android:exported="false" />
+49-->/Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:33:13-37
+50
+51        <provider
+51-->[androidx.emoji2:emoji2:1.2.0] /Users/comet/.gradle/caches/transforms-3/cb36afe1a7fd06c1c52751a7129e68d0/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+52            android:name="androidx.startup.InitializationProvider"
+52-->[androidx.emoji2:emoji2:1.2.0] /Users/comet/.gradle/caches/transforms-3/cb36afe1a7fd06c1c52751a7129e68d0/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+53            android:authorities="com.cometexpress.overuniverse.androidx-startup"
+53-->[androidx.emoji2:emoji2:1.2.0] /Users/comet/.gradle/caches/transforms-3/cb36afe1a7fd06c1c52751a7129e68d0/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+54            android:exported="false" >
+54-->[androidx.emoji2:emoji2:1.2.0] /Users/comet/.gradle/caches/transforms-3/cb36afe1a7fd06c1c52751a7129e68d0/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+55            <meta-data
+55-->[androidx.emoji2:emoji2:1.2.0] /Users/comet/.gradle/caches/transforms-3/cb36afe1a7fd06c1c52751a7129e68d0/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+56                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+56-->[androidx.emoji2:emoji2:1.2.0] /Users/comet/.gradle/caches/transforms-3/cb36afe1a7fd06c1c52751a7129e68d0/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+57                android:value="androidx.startup" />
+57-->[androidx.emoji2:emoji2:1.2.0] /Users/comet/.gradle/caches/transforms-3/cb36afe1a7fd06c1c52751a7129e68d0/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+58            <meta-data
+58-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/comet/.gradle/caches/transforms-3/e640abcb5b674e51b405ed72e2f38465/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+59                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+59-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/comet/.gradle/caches/transforms-3/e640abcb5b674e51b405ed72e2f38465/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+60                android:value="androidx.startup" />
+60-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/comet/.gradle/caches/transforms-3/e640abcb5b674e51b405ed72e2f38465/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+61            <meta-data
+61-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+62                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+62-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+63                android:value="androidx.startup" />
+63-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+64        </provider>
+65
+66        <service
+66-->[androidx.room:room-runtime:2.6.1] /Users/comet/.gradle/caches/transforms-3/bd3dbcecff192ff489139084e23a4937/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+67            android:name="androidx.room.MultiInstanceInvalidationService"
+67-->[androidx.room:room-runtime:2.6.1] /Users/comet/.gradle/caches/transforms-3/bd3dbcecff192ff489139084e23a4937/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+68            android:directBootAware="true"
+68-->[androidx.room:room-runtime:2.6.1] /Users/comet/.gradle/caches/transforms-3/bd3dbcecff192ff489139084e23a4937/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+69            android:exported="false" />
+69-->[androidx.room:room-runtime:2.6.1] /Users/comet/.gradle/caches/transforms-3/bd3dbcecff192ff489139084e23a4937/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+70
+71        <receiver
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+72            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+73            android:directBootAware="false"
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+74            android:enabled="true"
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+75            android:exported="true"
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+76            android:permission="android.permission.DUMP" >
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+77            <intent-filter>
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+78                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+79            </intent-filter>
+80            <intent-filter>
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+81                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+82            </intent-filter>
+83            <intent-filter>
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+84                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+85            </intent-filter>
+86            <intent-filter>
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+87                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+88            </intent-filter>
+89        </receiver>
+90    </application>
+91
+92</manifest>

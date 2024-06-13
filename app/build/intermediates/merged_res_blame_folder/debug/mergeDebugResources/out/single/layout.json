@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-mergeDebugResources-45:/layout/fragment_heroes.xml",
+        "source": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-main-48:/layout/fragment_heroes.xml"
+    },
+    {
+        "merged": "com.cometexpress.overuniverse.app-mergeDebugResources-45:/layout/activity_hero_info.xml",
+        "source": "com.cometexpress.overuniverse.app-main-48:/layout/activity_hero_info.xml"
+    },
+    {
+        "merged": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-mergeDebugResources-45:/layout/item_hero_ability.xml",
+        "source": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-main-48:/layout/item_hero_ability.xml"
+    },
+    {
+        "merged": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-mergeDebugResources-45:/layout/activity_main.xml",
+        "source": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-main-48:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-mergeDebugResources-45:/layout/fragment_maps.xml",
+        "source": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-main-48:/layout/fragment_maps.xml"
+    },
+    {
+        "merged": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-mergeDebugResources-45:/layout/vp_item_heroes.xml",
+        "source": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-main-48:/layout/vp_item_heroes.xml"
+    },
+    {
+        "merged": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-mergeDebugResources-45:/layout/layout_loading_view.xml",
+        "source": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-main-48:/layout/layout_loading_view.xml"
+    },
+    {
+        "merged": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-mergeDebugResources-45:/layout/activity_hero_info.xml",
+        "source": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-main-48:/layout/activity_hero_info.xml"
+    },
+    {
+        "merged": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-mergeDebugResources-45:/layout/activity_splash.xml",
+        "source": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-main-48:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-mergeDebugResources-45:/layout/item_hero.xml",
+        "source": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-main-48:/layout/item_hero.xml"
+    },
+    {
+        "merged": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-mergeDebugResources-45:/layout/item_hp.xml",
+        "source": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-main-48:/layout/item_hp.xml"
+    },
+    {
+        "merged": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-mergeDebugResources-45:/layout/fragment_modes.xml",
+        "source": "/Users/comet/.gradle/daemon/8.4/com.cometexpress.overuniverse.app-main-48:/layout/fragment_modes.xml"
+    }
+]

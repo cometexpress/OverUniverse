@@ -1,0 +1,419 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:2:1-36:12
+MERGED from [androidx.databinding:viewbinding:8.3.1] /Users/comet/.gradle/caches/transforms-3/4317a2e083c06dc1684ca88ee3796c9f/transformed/viewbinding-8.3.1/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.material:material:1.11.0] /Users/comet/.gradle/caches/transforms-3/99007bbbf29960f56769985e47100a4d/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/comet/.gradle/caches/transforms-3/3c0441d7f15d4e8ef407bd26f5ae8297/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/comet/.gradle/caches/transforms-3/6cdb2729a1ce453f758f2e1ff65ef448/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/comet/.gradle/caches/transforms-3/9e8ae8aa0e4bc4dfa7275b93ece9a1e5/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.dagger:hilt-android:2.51] /Users/comet/.gradle/caches/transforms-3/04c8b20680863fdaef744ddfac01f433/transformed/hilt-android-2.51/AndroidManifest.xml:16:1-19:12
+MERGED from [com.github.bumptech.glide:glide:4.16.0] /Users/comet/.gradle/caches/transforms-3/bc10ca71f6ffd51e6693ed6deb75f053/transformed/glide-4.16.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/comet/.gradle/caches/transforms-3/4554682205dc523de5e7bd1b99e5cb72/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.6.2] /Users/comet/.gradle/caches/transforms-3/dbc8f41b3cacfb8f8fec46e89dda5654/transformed/fragment-1.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment-ktx:1.6.2] /Users/comet/.gradle/caches/transforms-3/0291280580e86475b62c01c2ad8e1ed1/transformed/fragment-ktx-1.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.8.0] /Users/comet/.gradle/caches/transforms-3/c9fabbb136c573b7c6c5e8f9af54112a/transformed/activity-ktx-1.8.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.8.0] /Users/comet/.gradle/caches/transforms-3/c7cacc7336484b6df427931c7c401b84/transformed/activity-1.8.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-ui:1.3.1] /Users/comet/.gradle/caches/transforms-3/2f5a1394e0a137d193ec9715dda058d5/transformed/media3-ui-1.3.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-extractor:1.3.1] /Users/comet/.gradle/caches/transforms-3/9822a970b8ea6ed3ef83366f986e45de/transformed/media3-extractor-1.3.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-container:1.3.1] /Users/comet/.gradle/caches/transforms-3/2b01772f6bdbdf070e7a2c9b22e385ef/transformed/media3-container-1.3.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-datasource:1.3.1] /Users/comet/.gradle/caches/transforms-3/eb91abcc27f9fe8f81f4e8d2da4388d0/transformed/media3-datasource-1.3.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-decoder:1.3.1] /Users/comet/.gradle/caches/transforms-3/b975e60621a2f0296e67e8aba1438864/transformed/media3-decoder-1.3.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-database:1.3.1] /Users/comet/.gradle/caches/transforms-3/5395a5701070943d90bd47c200fb950d/transformed/media3-database-1.3.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-common:1.3.1] /Users/comet/.gradle/caches/transforms-3/58648528246767d9f9ca647c57eca918/transformed/media3-common-1.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media3:media3-exoplayer-dash:1.3.1] /Users/comet/.gradle/caches/transforms-3/23180cc3b88cb5ef5f9588b7abed9f95/transformed/media3-exoplayer-dash-1.3.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-exoplayer:1.3.1] /Users/comet/.gradle/caches/transforms-3/08f4ae49e2fdf1834339bfca682554ba/transformed/media3-exoplayer-1.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/comet/.gradle/caches/transforms-3/45588a2ee23ee1c5d7c10d70813e6112/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/comet/.gradle/caches/transforms-3/cb36afe1a7fd06c1c52751a7129e68d0/transformed/emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/comet/.gradle/caches/transforms-3/37e6e0b0e32c7d694d0ca464ec4b8df8/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/comet/.gradle/caches/transforms-3/6571dfc67de02859dc7ed0e8a35ed6f0/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/comet/.gradle/caches/transforms-3/a3d52a8eb071fd036b3d378499fa505f/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/comet/.gradle/caches/transforms-3/9f2851ff5343d9012ae39d059f0308fd/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/comet/.gradle/caches/transforms-3/c6f0ad38216de80da7b5d494d135c971/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/comet/.gradle/caches/transforms-3/193efb7f1a19a37c67e6d6968dccaef8/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.3.0] /Users/comet/.gradle/caches/transforms-3/9b3cb5fc82947541c26cd740a613e144/transformed/recyclerview-1.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.7.0] /Users/comet/.gradle/caches/transforms-3/7bb5b9a56f9359fda9783f8fa415f926/transformed/media-1.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/comet/.gradle/caches/transforms-3/995800d609ad67a0121e9f899fe83fa8/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] /Users/comet/.gradle/caches/transforms-3/97617a5f050af03ada02cd8d12fd5de4/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/comet/.gradle/caches/transforms-3/781dd14385d7ab69174e332d74833583/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/comet/.gradle/caches/transforms-3/549c569abab1c739333f44e6e277ca4a/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/comet/.gradle/caches/transforms-3/10776b8c5c9542899d5bdbcdf23ed7cf/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/comet/.gradle/caches/transforms-3/777da99523d031173fc5d73e6e440692/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/comet/.gradle/caches/transforms-3/c1fa8191440c8ac82662d2b33d7bdf2d/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /Users/comet/.gradle/caches/transforms-3/efcc7e7cd791c48c5e995b202fdf4c9d/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/comet/.gradle/caches/transforms-3/e640abcb5b674e51b405ed72e2f38465/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/comet/.gradle/caches/transforms-3/a3d61f734f64484039293b6f5f2e223a/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/comet/.gradle/caches/transforms-3/8c4b372618642c10a3f82118c83b3b75/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/comet/.gradle/caches/transforms-3/80bc4e1fd7619a1eabd83f545e4bbc5e/transformed/lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/comet/.gradle/caches/transforms-3/975ed8bcd413de8ebc63a38de456c5f4/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /Users/comet/.gradle/caches/transforms-3/cfb929b8242afc4052ddb5b181293b49/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/comet/.gradle/caches/transforms-3/e06813adb8f4066a9979f340854db5d9/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/comet/.gradle/caches/transforms-3/563d8ee14462e914caaaa79964bc149c/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.12.0] /Users/comet/.gradle/caches/transforms-3/3e43d692a3ae2e72d690ee238e18d5ce/transformed/core-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/comet/.gradle/caches/transforms-3/bd3dbcecff192ff489139084e23a4937/transformed/room-runtime-2.6.1/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.room:room-rxjava2:2.6.1] /Users/comet/.gradle/caches/transforms-3/0b4f1afcac440f8cf5e649cd8e95fd2c/transformed/room-rxjava2-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.1] /Users/comet/.gradle/caches/transforms-3/3072ef0b27c8d997ff014b2846b56478/transformed/annotation-experimental-1.3.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/comet/.gradle/caches/transforms-3/0f90d9f8f4132e5f7b771d64e0a1a426/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/comet/.gradle/caches/transforms-3/8feaa521f1a4d1c111094e75322c353c/transformed/sqlite-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/comet/.gradle/caches/transforms-3/c154a770ccecbeba3e771fdc588747c8/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/comet/.gradle/caches/transforms-3/7932924a60ef4bd09d0b137d57deac2d/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/comet/.gradle/caches/transforms-3/07a7f8fdfebea3686a6a3bee1a42e269/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/comet/.gradle/caches/transforms-3/f79b371f7da2cce206ba959f1e52efef/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] /Users/comet/.gradle/caches/transforms-3/a2e3688ba65066a956cf11b6677ec669/transformed/gifdecoder-4.16.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /Users/comet/.gradle/caches/transforms-3/3222980a5411c863334c7e47a22e1cb5/transformed/exifinterface-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/comet/.gradle/caches/transforms-3/28f40fbc4e2589523a6f3869f3542ace/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/comet/.gradle/caches/transforms-3/99c05b2dfe86321aa16561413e80799e/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/comet/.gradle/caches/transforms-3/3dbd65df1bdbd0eb2e968a7d461d150c/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/comet/.gradle/caches/transforms-3/5c66e51740f4c44863b2608d139fa95d/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/comet/.gradle/caches/transforms-3/f9cc897f617a305e00a43bffc16e7332/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/comet/.gradle/caches/transforms-3/f661a4061f0cb5ecc34be0bedb328b62/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.orhanobut:logger:2.2.0] /Users/comet/.gradle/caches/transforms-3/3b3bd16370bf9af49638e9d982f97cbf/transformed/logger-2.2.0/AndroidManifest.xml:2:1-8:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] /Users/comet/.gradle/caches/transforms-3/033f2295e44798e1af1d4bf83038315c/transformed/rxandroid-2.1.1/AndroidManifest.xml:15:1-20:12
+MERGED from [com.google.dagger:dagger-lint-aar:2.51] /Users/comet/.gradle/caches/transforms-3/9cc5e7c27baebe385705818a81ece2b0/transformed/dagger-lint-aar-2.51/AndroidManifest.xml:16:1-19:12
+	package
+		INJECTED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:4:5-45
+uses-permission#android.permission.INTERNET
+ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:6:22-64
+application
+ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:8:5-34:19
+INJECTED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:8:5-34:19
+MERGED from [com.google.android.material:material:1.11.0] /Users/comet/.gradle/caches/transforms-3/99007bbbf29960f56769985e47100a4d/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.11.0] /Users/comet/.gradle/caches/transforms-3/99007bbbf29960f56769985e47100a4d/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/comet/.gradle/caches/transforms-3/3c0441d7f15d4e8ef407bd26f5ae8297/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/comet/.gradle/caches/transforms-3/3c0441d7f15d4e8ef407bd26f5ae8297/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/comet/.gradle/caches/transforms-3/cb36afe1a7fd06c1c52751a7129e68d0/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/comet/.gradle/caches/transforms-3/cb36afe1a7fd06c1c52751a7129e68d0/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/comet/.gradle/caches/transforms-3/e640abcb5b674e51b405ed72e2f38465/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/comet/.gradle/caches/transforms-3/e640abcb5b674e51b405ed72e2f38465/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/comet/.gradle/caches/transforms-3/bd3dbcecff192ff489139084e23a4937/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/comet/.gradle/caches/transforms-3/bd3dbcecff192ff489139084e23a4937/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/comet/.gradle/caches/transforms-3/07a7f8fdfebea3686a6a3bee1a42e269/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/comet/.gradle/caches/transforms-3/07a7f8fdfebea3686a6a3bee1a42e269/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/comet/.gradle/caches/transforms-3/99c05b2dfe86321aa16561413e80799e/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/comet/.gradle/caches/transforms-3/99c05b2dfe86321aa16561413e80799e/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:extractNativeLibs
+		INJECTED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:16:9-35
+	android:label
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:14:9-41
+	android:fullBackupContent
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:12:9-54
+	android:roundIcon
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:15:9-54
+	tools:targetApi
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:18:9-29
+	android:icon
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:13:9-43
+	android:allowBackup
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:17:9-49
+	android:dataExtractionRules
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:11:9-65
+	android:name
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:9:9-40
+activity#com.cometexpress.overuniverse.presentation.main.hero_info.HeroInfoActivity
+ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:19:9-21:40
+	android:exported
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:20:13-73
+activity#com.cometexpress.overuniverse.presentation.splash.SplashActivity
+ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:22:9-30:20
+	android:exported
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:24:13-36
+	android:name
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:23:13-63
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:25:13-29:29
+action#android.intent.action.MAIN
+ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:28:17-77
+	android:name
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:28:27-74
+activity#com.cometexpress.overuniverse.presentation.main.MainActivity
+ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:31:9-33:49
+	android:exported
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:33:13-37
+	android:name
+		ADDED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml:32:13-59
+uses-sdk
+INJECTED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml
+INJECTED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:8.3.1] /Users/comet/.gradle/caches/transforms-3/4317a2e083c06dc1684ca88ee3796c9f/transformed/viewbinding-8.3.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:8.3.1] /Users/comet/.gradle/caches/transforms-3/4317a2e083c06dc1684ca88ee3796c9f/transformed/viewbinding-8.3.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.material:material:1.11.0] /Users/comet/.gradle/caches/transforms-3/99007bbbf29960f56769985e47100a4d/transformed/material-1.11.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.11.0] /Users/comet/.gradle/caches/transforms-3/99007bbbf29960f56769985e47100a4d/transformed/material-1.11.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/comet/.gradle/caches/transforms-3/3c0441d7f15d4e8ef407bd26f5ae8297/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/comet/.gradle/caches/transforms-3/3c0441d7f15d4e8ef407bd26f5ae8297/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/comet/.gradle/caches/transforms-3/6cdb2729a1ce453f758f2e1ff65ef448/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/comet/.gradle/caches/transforms-3/6cdb2729a1ce453f758f2e1ff65ef448/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/comet/.gradle/caches/transforms-3/9e8ae8aa0e4bc4dfa7275b93ece9a1e5/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/comet/.gradle/caches/transforms-3/9e8ae8aa0e4bc4dfa7275b93ece9a1e5/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:hilt-android:2.51] /Users/comet/.gradle/caches/transforms-3/04c8b20680863fdaef744ddfac01f433/transformed/hilt-android-2.51/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:hilt-android:2.51] /Users/comet/.gradle/caches/transforms-3/04c8b20680863fdaef744ddfac01f433/transformed/hilt-android-2.51/AndroidManifest.xml:18:3-42
+MERGED from [com.github.bumptech.glide:glide:4.16.0] /Users/comet/.gradle/caches/transforms-3/bc10ca71f6ffd51e6693ed6deb75f053/transformed/glide-4.16.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.16.0] /Users/comet/.gradle/caches/transforms-3/bc10ca71f6ffd51e6693ed6deb75f053/transformed/glide-4.16.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/comet/.gradle/caches/transforms-3/4554682205dc523de5e7bd1b99e5cb72/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/comet/.gradle/caches/transforms-3/4554682205dc523de5e7bd1b99e5cb72/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.6.2] /Users/comet/.gradle/caches/transforms-3/dbc8f41b3cacfb8f8fec46e89dda5654/transformed/fragment-1.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.6.2] /Users/comet/.gradle/caches/transforms-3/dbc8f41b3cacfb8f8fec46e89dda5654/transformed/fragment-1.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.6.2] /Users/comet/.gradle/caches/transforms-3/0291280580e86475b62c01c2ad8e1ed1/transformed/fragment-ktx-1.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.6.2] /Users/comet/.gradle/caches/transforms-3/0291280580e86475b62c01c2ad8e1ed1/transformed/fragment-ktx-1.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.0] /Users/comet/.gradle/caches/transforms-3/c9fabbb136c573b7c6c5e8f9af54112a/transformed/activity-ktx-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.0] /Users/comet/.gradle/caches/transforms-3/c9fabbb136c573b7c6c5e8f9af54112a/transformed/activity-ktx-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.8.0] /Users/comet/.gradle/caches/transforms-3/c7cacc7336484b6df427931c7c401b84/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.0] /Users/comet/.gradle/caches/transforms-3/c7cacc7336484b6df427931c7c401b84/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-ui:1.3.1] /Users/comet/.gradle/caches/transforms-3/2f5a1394e0a137d193ec9715dda058d5/transformed/media3-ui-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-ui:1.3.1] /Users/comet/.gradle/caches/transforms-3/2f5a1394e0a137d193ec9715dda058d5/transformed/media3-ui-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-extractor:1.3.1] /Users/comet/.gradle/caches/transforms-3/9822a970b8ea6ed3ef83366f986e45de/transformed/media3-extractor-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-extractor:1.3.1] /Users/comet/.gradle/caches/transforms-3/9822a970b8ea6ed3ef83366f986e45de/transformed/media3-extractor-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-container:1.3.1] /Users/comet/.gradle/caches/transforms-3/2b01772f6bdbdf070e7a2c9b22e385ef/transformed/media3-container-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-container:1.3.1] /Users/comet/.gradle/caches/transforms-3/2b01772f6bdbdf070e7a2c9b22e385ef/transformed/media3-container-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-datasource:1.3.1] /Users/comet/.gradle/caches/transforms-3/eb91abcc27f9fe8f81f4e8d2da4388d0/transformed/media3-datasource-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-datasource:1.3.1] /Users/comet/.gradle/caches/transforms-3/eb91abcc27f9fe8f81f4e8d2da4388d0/transformed/media3-datasource-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-decoder:1.3.1] /Users/comet/.gradle/caches/transforms-3/b975e60621a2f0296e67e8aba1438864/transformed/media3-decoder-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-decoder:1.3.1] /Users/comet/.gradle/caches/transforms-3/b975e60621a2f0296e67e8aba1438864/transformed/media3-decoder-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-database:1.3.1] /Users/comet/.gradle/caches/transforms-3/5395a5701070943d90bd47c200fb950d/transformed/media3-database-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-database:1.3.1] /Users/comet/.gradle/caches/transforms-3/5395a5701070943d90bd47c200fb950d/transformed/media3-database-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-common:1.3.1] /Users/comet/.gradle/caches/transforms-3/58648528246767d9f9ca647c57eca918/transformed/media3-common-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-common:1.3.1] /Users/comet/.gradle/caches/transforms-3/58648528246767d9f9ca647c57eca918/transformed/media3-common-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-exoplayer-dash:1.3.1] /Users/comet/.gradle/caches/transforms-3/23180cc3b88cb5ef5f9588b7abed9f95/transformed/media3-exoplayer-dash-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-exoplayer-dash:1.3.1] /Users/comet/.gradle/caches/transforms-3/23180cc3b88cb5ef5f9588b7abed9f95/transformed/media3-exoplayer-dash-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-exoplayer:1.3.1] /Users/comet/.gradle/caches/transforms-3/08f4ae49e2fdf1834339bfca682554ba/transformed/media3-exoplayer-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-exoplayer:1.3.1] /Users/comet/.gradle/caches/transforms-3/08f4ae49e2fdf1834339bfca682554ba/transformed/media3-exoplayer-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/comet/.gradle/caches/transforms-3/45588a2ee23ee1c5d7c10d70813e6112/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/comet/.gradle/caches/transforms-3/45588a2ee23ee1c5d7c10d70813e6112/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/comet/.gradle/caches/transforms-3/cb36afe1a7fd06c1c52751a7129e68d0/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/comet/.gradle/caches/transforms-3/cb36afe1a7fd06c1c52751a7129e68d0/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/comet/.gradle/caches/transforms-3/37e6e0b0e32c7d694d0ca464ec4b8df8/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/comet/.gradle/caches/transforms-3/37e6e0b0e32c7d694d0ca464ec4b8df8/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/comet/.gradle/caches/transforms-3/6571dfc67de02859dc7ed0e8a35ed6f0/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/comet/.gradle/caches/transforms-3/6571dfc67de02859dc7ed0e8a35ed6f0/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/comet/.gradle/caches/transforms-3/a3d52a8eb071fd036b3d378499fa505f/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/comet/.gradle/caches/transforms-3/a3d52a8eb071fd036b3d378499fa505f/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /Users/comet/.gradle/caches/transforms-3/9f2851ff5343d9012ae39d059f0308fd/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/comet/.gradle/caches/transforms-3/9f2851ff5343d9012ae39d059f0308fd/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/comet/.gradle/caches/transforms-3/c6f0ad38216de80da7b5d494d135c971/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/comet/.gradle/caches/transforms-3/c6f0ad38216de80da7b5d494d135c971/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/comet/.gradle/caches/transforms-3/193efb7f1a19a37c67e6d6968dccaef8/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/comet/.gradle/caches/transforms-3/193efb7f1a19a37c67e6d6968dccaef8/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.3.0] /Users/comet/.gradle/caches/transforms-3/9b3cb5fc82947541c26cd740a613e144/transformed/recyclerview-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.0] /Users/comet/.gradle/caches/transforms-3/9b3cb5fc82947541c26cd740a613e144/transformed/recyclerview-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.7.0] /Users/comet/.gradle/caches/transforms-3/7bb5b9a56f9359fda9783f8fa415f926/transformed/media-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.media:media:1.7.0] /Users/comet/.gradle/caches/transforms-3/7bb5b9a56f9359fda9783f8fa415f926/transformed/media-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/comet/.gradle/caches/transforms-3/995800d609ad67a0121e9f899fe83fa8/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/comet/.gradle/caches/transforms-3/995800d609ad67a0121e9f899fe83fa8/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] /Users/comet/.gradle/caches/transforms-3/97617a5f050af03ada02cd8d12fd5de4/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/comet/.gradle/caches/transforms-3/97617a5f050af03ada02cd8d12fd5de4/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/comet/.gradle/caches/transforms-3/781dd14385d7ab69174e332d74833583/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/comet/.gradle/caches/transforms-3/781dd14385d7ab69174e332d74833583/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/comet/.gradle/caches/transforms-3/549c569abab1c739333f44e6e277ca4a/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/comet/.gradle/caches/transforms-3/549c569abab1c739333f44e6e277ca4a/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/comet/.gradle/caches/transforms-3/10776b8c5c9542899d5bdbcdf23ed7cf/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/comet/.gradle/caches/transforms-3/10776b8c5c9542899d5bdbcdf23ed7cf/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/comet/.gradle/caches/transforms-3/777da99523d031173fc5d73e6e440692/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/comet/.gradle/caches/transforms-3/777da99523d031173fc5d73e6e440692/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/comet/.gradle/caches/transforms-3/c1fa8191440c8ac82662d2b33d7bdf2d/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /Users/comet/.gradle/caches/transforms-3/c1fa8191440c8ac82662d2b33d7bdf2d/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /Users/comet/.gradle/caches/transforms-3/efcc7e7cd791c48c5e995b202fdf4c9d/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /Users/comet/.gradle/caches/transforms-3/efcc7e7cd791c48c5e995b202fdf4c9d/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/comet/.gradle/caches/transforms-3/e640abcb5b674e51b405ed72e2f38465/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/comet/.gradle/caches/transforms-3/e640abcb5b674e51b405ed72e2f38465/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/comet/.gradle/caches/transforms-3/a3d61f734f64484039293b6f5f2e223a/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/comet/.gradle/caches/transforms-3/a3d61f734f64484039293b6f5f2e223a/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/comet/.gradle/caches/transforms-3/8c4b372618642c10a3f82118c83b3b75/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/comet/.gradle/caches/transforms-3/8c4b372618642c10a3f82118c83b3b75/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/comet/.gradle/caches/transforms-3/80bc4e1fd7619a1eabd83f545e4bbc5e/transformed/lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /Users/comet/.gradle/caches/transforms-3/80bc4e1fd7619a1eabd83f545e4bbc5e/transformed/lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/comet/.gradle/caches/transforms-3/975ed8bcd413de8ebc63a38de456c5f4/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/comet/.gradle/caches/transforms-3/975ed8bcd413de8ebc63a38de456c5f4/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /Users/comet/.gradle/caches/transforms-3/cfb929b8242afc4052ddb5b181293b49/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /Users/comet/.gradle/caches/transforms-3/cfb929b8242afc4052ddb5b181293b49/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/comet/.gradle/caches/transforms-3/e06813adb8f4066a9979f340854db5d9/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/comet/.gradle/caches/transforms-3/e06813adb8f4066a9979f340854db5d9/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/comet/.gradle/caches/transforms-3/563d8ee14462e914caaaa79964bc149c/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/comet/.gradle/caches/transforms-3/563d8ee14462e914caaaa79964bc149c/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.12.0] /Users/comet/.gradle/caches/transforms-3/3e43d692a3ae2e72d690ee238e18d5ce/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] /Users/comet/.gradle/caches/transforms-3/3e43d692a3ae2e72d690ee238e18d5ce/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/comet/.gradle/caches/transforms-3/bd3dbcecff192ff489139084e23a4937/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/comet/.gradle/caches/transforms-3/bd3dbcecff192ff489139084e23a4937/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-rxjava2:2.6.1] /Users/comet/.gradle/caches/transforms-3/0b4f1afcac440f8cf5e649cd8e95fd2c/transformed/room-rxjava2-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-rxjava2:2.6.1] /Users/comet/.gradle/caches/transforms-3/0b4f1afcac440f8cf5e649cd8e95fd2c/transformed/room-rxjava2-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.1] /Users/comet/.gradle/caches/transforms-3/3072ef0b27c8d997ff014b2846b56478/transformed/annotation-experimental-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.1] /Users/comet/.gradle/caches/transforms-3/3072ef0b27c8d997ff014b2846b56478/transformed/annotation-experimental-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/comet/.gradle/caches/transforms-3/0f90d9f8f4132e5f7b771d64e0a1a426/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/comet/.gradle/caches/transforms-3/0f90d9f8f4132e5f7b771d64e0a1a426/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/comet/.gradle/caches/transforms-3/8feaa521f1a4d1c111094e75322c353c/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/comet/.gradle/caches/transforms-3/8feaa521f1a4d1c111094e75322c353c/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/comet/.gradle/caches/transforms-3/c154a770ccecbeba3e771fdc588747c8/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/comet/.gradle/caches/transforms-3/c154a770ccecbeba3e771fdc588747c8/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/comet/.gradle/caches/transforms-3/7932924a60ef4bd09d0b137d57deac2d/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/comet/.gradle/caches/transforms-3/7932924a60ef4bd09d0b137d57deac2d/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/comet/.gradle/caches/transforms-3/07a7f8fdfebea3686a6a3bee1a42e269/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/comet/.gradle/caches/transforms-3/07a7f8fdfebea3686a6a3bee1a42e269/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/comet/.gradle/caches/transforms-3/f79b371f7da2cce206ba959f1e52efef/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/comet/.gradle/caches/transforms-3/f79b371f7da2cce206ba959f1e52efef/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] /Users/comet/.gradle/caches/transforms-3/a2e3688ba65066a956cf11b6677ec669/transformed/gifdecoder-4.16.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] /Users/comet/.gradle/caches/transforms-3/a2e3688ba65066a956cf11b6677ec669/transformed/gifdecoder-4.16.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /Users/comet/.gradle/caches/transforms-3/3222980a5411c863334c7e47a22e1cb5/transformed/exifinterface-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /Users/comet/.gradle/caches/transforms-3/3222980a5411c863334c7e47a22e1cb5/transformed/exifinterface-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/comet/.gradle/caches/transforms-3/28f40fbc4e2589523a6f3869f3542ace/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/comet/.gradle/caches/transforms-3/28f40fbc4e2589523a6f3869f3542ace/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/comet/.gradle/caches/transforms-3/99c05b2dfe86321aa16561413e80799e/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/comet/.gradle/caches/transforms-3/99c05b2dfe86321aa16561413e80799e/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/comet/.gradle/caches/transforms-3/3dbd65df1bdbd0eb2e968a7d461d150c/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/comet/.gradle/caches/transforms-3/3dbd65df1bdbd0eb2e968a7d461d150c/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/comet/.gradle/caches/transforms-3/5c66e51740f4c44863b2608d139fa95d/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/comet/.gradle/caches/transforms-3/5c66e51740f4c44863b2608d139fa95d/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/comet/.gradle/caches/transforms-3/f9cc897f617a305e00a43bffc16e7332/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/comet/.gradle/caches/transforms-3/f9cc897f617a305e00a43bffc16e7332/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/comet/.gradle/caches/transforms-3/f661a4061f0cb5ecc34be0bedb328b62/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/comet/.gradle/caches/transforms-3/f661a4061f0cb5ecc34be0bedb328b62/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.orhanobut:logger:2.2.0] /Users/comet/.gradle/caches/transforms-3/3b3bd16370bf9af49638e9d982f97cbf/transformed/logger-2.2.0/AndroidManifest.xml:6:5-43
+MERGED from [com.orhanobut:logger:2.2.0] /Users/comet/.gradle/caches/transforms-3/3b3bd16370bf9af49638e9d982f97cbf/transformed/logger-2.2.0/AndroidManifest.xml:6:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] /Users/comet/.gradle/caches/transforms-3/033f2295e44798e1af1d4bf83038315c/transformed/rxandroid-2.1.1/AndroidManifest.xml:18:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] /Users/comet/.gradle/caches/transforms-3/033f2295e44798e1af1d4bf83038315c/transformed/rxandroid-2.1.1/AndroidManifest.xml:18:5-43
+MERGED from [com.google.dagger:dagger-lint-aar:2.51] /Users/comet/.gradle/caches/transforms-3/9cc5e7c27baebe385705818a81ece2b0/transformed/dagger-lint-aar-2.51/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:dagger-lint-aar:2.51] /Users/comet/.gradle/caches/transforms-3/9cc5e7c27baebe385705818a81ece2b0/transformed/dagger-lint-aar-2.51/AndroidManifest.xml:18:3-42
+	android:targetSdkVersion
+		INJECTED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/comet/AndroidStudioProjects/overuniverse/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [androidx.media3:media3-common:1.3.1] /Users/comet/.gradle/caches/transforms-3/58648528246767d9f9ca647c57eca918/transformed/media3-common-1.3.1/AndroidManifest.xml:22:5-79
+MERGED from [androidx.media3:media3-exoplayer:1.3.1] /Users/comet/.gradle/caches/transforms-3/08f4ae49e2fdf1834339bfca682554ba/transformed/media3-exoplayer-1.3.1/AndroidManifest.xml:22:5-79
+MERGED from [androidx.media3:media3-exoplayer:1.3.1] /Users/comet/.gradle/caches/transforms-3/08f4ae49e2fdf1834339bfca682554ba/transformed/media3-exoplayer-1.3.1/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [androidx.media3:media3-common:1.3.1] /Users/comet/.gradle/caches/transforms-3/58648528246767d9f9ca647c57eca918/transformed/media3-common-1.3.1/AndroidManifest.xml:22:22-76
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/comet/.gradle/caches/transforms-3/cb36afe1a7fd06c1c52751a7129e68d0/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/comet/.gradle/caches/transforms-3/e640abcb5b674e51b405ed72e2f38465/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/comet/.gradle/caches/transforms-3/e640abcb5b674e51b405ed72e2f38465/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/comet/.gradle/caches/transforms-3/07a7f8fdfebea3686a6a3bee1a42e269/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/comet/.gradle/caches/transforms-3/07a7f8fdfebea3686a6a3bee1a42e269/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/comet/.gradle/caches/transforms-3/cb36afe1a7fd06c1c52751a7129e68d0/transformed/emoji2-1.2.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/comet/.gradle/caches/transforms-3/cb36afe1a7fd06c1c52751a7129e68d0/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/comet/.gradle/caches/transforms-3/cb36afe1a7fd06c1c52751a7129e68d0/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/comet/.gradle/caches/transforms-3/cb36afe1a7fd06c1c52751a7129e68d0/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/comet/.gradle/caches/transforms-3/cb36afe1a7fd06c1c52751a7129e68d0/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/comet/.gradle/caches/transforms-3/cb36afe1a7fd06c1c52751a7129e68d0/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/comet/.gradle/caches/transforms-3/cb36afe1a7fd06c1c52751a7129e68d0/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+permission#com.cometexpress.overuniverse.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+uses-permission#com.cometexpress.overuniverse.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/comet/.gradle/caches/transforms-3/57f4b5d06579fa48dd272548fd58618e/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/comet/.gradle/caches/transforms-3/e640abcb5b674e51b405ed72e2f38465/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/comet/.gradle/caches/transforms-3/e640abcb5b674e51b405ed72e2f38465/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/comet/.gradle/caches/transforms-3/e640abcb5b674e51b405ed72e2f38465/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.6.1] /Users/comet/.gradle/caches/transforms-3/bd3dbcecff192ff489139084e23a4937/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/comet/.gradle/caches/transforms-3/bd3dbcecff192ff489139084e23a4937/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/comet/.gradle/caches/transforms-3/bd3dbcecff192ff489139084e23a4937/transformed/room-runtime-2.6.1/AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/comet/.gradle/caches/transforms-3/bd3dbcecff192ff489139084e23a4937/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/comet/.gradle/caches/transforms-3/bd3dbcecff192ff489139084e23a4937/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/comet/.gradle/caches/transforms-3/4e00df57b7d4447b1e9e3114e685f7bc/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92

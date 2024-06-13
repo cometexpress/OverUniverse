@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragment_heroes"
+        android:title="영웅"
+        android:icon="@drawable/baseline_heroes"/>
+    <item
+        android:id="@+id/fragment_modes"
+        android:title="게임모드"
+        android:icon="@drawable/baseline_mode"/>
+    <item
+        android:id="@+id/fragment_maps"
+        android:title="맵"
+        android:icon="@drawable/baseline_map"/>
+</menu>

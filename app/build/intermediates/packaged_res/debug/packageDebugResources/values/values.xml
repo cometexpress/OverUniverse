@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="bottom_background">#202027</color>
+    <color name="main_background">#121214</color>
+    <color name="primary">#F1742B</color>
+    <color name="progress_armor">#BC6C2D</color>
+    <color name="progress_normal">#ffffff</color>
+    <color name="progress_shields">#1DA8C3</color>
+    <color name="txt_disabled">#42424A</color>
+    <color name="txt_primary">#F9F9FD</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">OverUniverse</string>
+    <string name="error_get_role_datas">데이터를 불러오는데 실패했습니다</string>
+    <string name="hero_armor_hp"><![CDATA[<font color="#BC6C2D">%d</font> / <font color="#ffffff">%d</font>]]></string>
+    <string name="hero_full_hp"><![CDATA[<font color="#1DA8C3">%d</font> / <font color="#BC6C2D">%d</font> / <font color="#ffffff">%d</font>]]></string>
+    <string name="hero_only_hp"><![CDATA[<font color="#ffffff">%d</font>]]></string>
+    <string name="hero_shield_hp"><![CDATA[<font color="#1DA8C3">%d</font> / <font color="#ffffff">%d</font>]]></string>
+    <style name="Base.Theme.RxJavaStudy" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+
+        <item name="android:statusBarColor">@color/main_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+    </style>
+    <style name="Theme.RxJavaStudy" parent="Base.Theme.RxJavaStudy"/>
+</resources>
